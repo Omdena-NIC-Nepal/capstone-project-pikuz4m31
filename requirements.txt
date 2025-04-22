@@ -1,0 +1,99 @@
+# -------------------------
+# CORE DATA SCIENCE
+# -------------------------
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+scipy
+pandas-profiling
+
+# -------------------------
+# GEOSPATIAL & REMOTE SENSING
+# -------------------------
+geopandas
+rasterio
+shapely
+folium
+contextily
+earthpy
+scikit-image
+
+# -------------------------
+# CLIMATE & WEATHER DATA
+# -------------------------
+xarray
+netCDF4
+cfgrib
+h5py
+cdsapi
+eofs
+
+# -------------------------
+# VISUALIZATION & DASHBOARD
+# -------------------------
+plotly
+streamlit
+altair
+
+# -------------------------
+# MACHINE LEARNING
+# -------------------------
+xgboost
+lightgbm
+catboost
+joblib
+feature-engine
+
+# -------------------------
+# NLP
+# -------------------------
+nltk
+spacy
+transformers
+sentence-transformers
+beautifulsoup4
+newspaper3k
+textblob
+textacy
+
+# -------------------------
+# UTILITIES
+# -------------------------
+requests
+aiohttp
+tqdm
+python-dotenv
+pyyaml
+loguru
+boto3
+flask
+
+# -------------------------
+# TESTING
+# -------------------------
+pytest
+
+# -------------------------
+# DEEP LEARNING (Optional)
+# -------------------------
+tensorflow  # If you plan to use deep learning
+# OR 
+pytorch
+
+# -------------------------
+# TIME-SERIES FORECASTING
+# -------------------------
+prophet
+statsmodels
+
+# -------------------------
+# DATABASE INTEGRATION (Optional)
+# -------------------------
+sqlalchemy
+
+# -------------------------
+# DATA VERSION CONTROL (Optional)
+# -------------------------
+dvc
