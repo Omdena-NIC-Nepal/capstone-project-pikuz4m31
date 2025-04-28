@@ -196,11 +196,11 @@ if selected_main != "Select...":
 
 # Page Display
 if st.session_state.page == "Home":
-    st.write("""
-    ### 🌍 Climate Prediction and Assessment App
+    st.write("""  
+    ### 🌍 Climate Prediction and Assessment App  
     Welcome to the app!  
-    Navigate through the sections using the sidebar.
-    
+    Navigate through the sections using the sidebar.  
+
     **Key Features:**
     - Vulnerability Analysis
     - Climate Trend Analysis
@@ -212,31 +212,40 @@ else:
     page_path = PAGES.get(st.session_state.page, None)
     if page_path:
         try:
-            # Ensure the page is executed properly
-            with open(page_path, "r", encoding="utf-8", errors="ignore") as f:
-                code = f.read()
-                exec(code, globals())
-                
-            # Call the page-specific display function if it exists
-            if 'display_page' in globals():
-                display_page()  # Assuming 'display_page' exists in the pages
-            
+            # Dynamically calculate file path (handling both local and deployed environments)
+            base_dir = os.path.dirname(__file__)  # This is where your script is located
+            abs_path = os.path.join(base_dir, page_path)  # Get absolute path to the page file
+
+            # Check if file exists at that location
+            if os.path.exists(abs_path):
+                with open(abs_path, "r", encoding="utf-8", errors="ignore") as f:
+                    code = f.read()
+                    exec(code, globals())
+
+                # If the page has a 'display_page' function, call it
+                if 'display_page' in globals():
+                    display_page()
+            else:
+                st.error(f"Error: File not found at {abs_path}")
+
         except Exception as e:
             st.error(f"Error loading page `{st.session_state.page}`: {str(e)}")
     else:
         st.info(f"Page `{st.session_state.page}` is a dummy page (content coming soon).")
 
 # Debugging paths for deployment
-base_dir = os.path.dirname(__file__)  # This works locally, but for Streamlit deployment, consider using fixed paths
-climate_pages_dir = os.path.join(base_dir, 'climate_pages')
+if st.session_state.page == "Home":
+    base_dir = os.path.dirname(__file__)  # This works locally, but for Streamlit deployment, consider using fixed paths
+    climate_pages_dir = os.path.join(base_dir, 'climate_pages')
+    abs_climate_pages_dir = os.path.abspath(climate_pages_dir)
 
-print("Absolute path to climate_pages directory:", climate_pages_dir)
+    # Use Streamlit to display debug output, instead of print
+    st.write("Absolute path to climate_pages directory:", abs_climate_pages_dir)
 
-# Convert to absolute path for deployment
-file_path = os.path.abspath(os.path.join(climate_pages_dir, '3_Predictions.py'))
-print("Looking for file at:", file_path)
+    file_path = os.path.join(abs_climate_pages_dir, '3_Predictions.py')
+    st.write("Looking for file at:", file_path)
 
-if os.path.exists(file_path):
-    print(f"File found at: {file_path}")
-else:
-    print(f"File not found: {file_path}")
+    if os.path.exists(file_path):
+        st.write(f"File found at: {file_path}")
+    else:
+        st.error(f"File not found: {file_path}")
