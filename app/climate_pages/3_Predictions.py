@@ -168,11 +168,14 @@
 #         st.success(f"📅 Predicted Climate Event for {future_day}/{future_month}/{future_year}: **{label}**")
 
 
+# 3_Predictions.py
+
 import streamlit as st
 import pandas as pd
 import numpy as np
 import os
 import sys
+
 from sklearn.preprocessing import StandardScaler
 
 # Add the src directory to sys.path
@@ -182,10 +185,11 @@ sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '
 from model_training import train_and_save_model, predict, calculate_metrics, load_model
 
 # --- Helper Functions ---
+
 @st.cache_data
-def load_data_from_uploaded_file(uploaded_file):
+def load_data(filepath):
     try:
-        df = pd.read_csv(uploaded_file)
+        df = pd.read_csv(filepath)
         df['Date'] = pd.to_datetime(df[['year', 'month', 'day']])
 
         # Feature Engineering
@@ -207,7 +211,7 @@ def load_data_from_uploaded_file(uploaded_file):
 
         return df_clean, X_clean, y_clean, y_log, y_class
     except Exception as e:
-        st.error(f"Error loading data: {e}")
+        st.error(f"❗ Error loading data: {e}")
         return None, None, None, None, None
 
 def scale_features(X):
@@ -221,111 +225,121 @@ def cached_train_model(model_choice, params, X_scaled, y_log):
     return train_and_save_model(model_choice, params, X_scaled, y_log)
 
 # --- Streamlit App ---
+
 st.title("🌎 Climate Prediction and Assessment App")
 
-# File upload for data
-uploaded_file = st.file_uploader("Upload the Cleaned Climate Data CSV", type=["csv"])
+# --- Load Data Dynamically ---
+current_dir = os.path.dirname(os.path.abspath(__file__))
+csv_path = os.path.join(current_dir, '..', 'data', 'processed', 'dailyclimate_cleaned.csv')
 
-if uploaded_file:
-    df, X, y, y_log, y_class = load_data_from_uploaded_file(uploaded_file)
-    if df is None:
-        st.stop()
+if not os.path.exists(csv_path):
+    st.error(f"❗ Data file not found at expected location: `{csv_path}`")
+    st.stop()
 
-    # Model selection
-    model_choice = st.selectbox("Choose Model", [
-        'Ridge Regression',
-        'Lasso Regression',
-        'Gradient Boosting Regression',
-        'Random Forest Classifier',
-        'Support Vector Machine'
-    ])
+df, X, y, y_log, y_class = load_data(csv_path)
+if df is None:
+    st.stop()
 
-    # Hyperparameters
-    params = {}
-    run_fast = st.checkbox("⚡ Run Fast Mode", value=True)
+# --- Model selection ---
+model_choice = st.selectbox("Choose Model", [
+    'Ridge Regression',
+    'Lasso Regression',
+    'Gradient Boosting Regression',
+    'Random Forest Classifier',
+    'Support Vector Machine'
+])
 
+# --- Hyperparameters ---
+params = {}
+run_fast = st.checkbox("⚡ Run Fast Mode", value=True)
+
+if model_choice in ["Ridge Regression", "Lasso Regression"]:
+    params['alpha'] = st.slider("Alpha", 0.01, 10.0, 1.0)
+elif model_choice == "Gradient Boosting Regression":
+    params['n_estimators'] = st.slider("Estimators", 50, 1000, 100)
+    params['learning_rate'] = st.slider("Learning Rate", 0.01, 0.5, 0.1)
+    params['max_depth'] = st.slider("Max Depth", 2, 10, 3)
+elif model_choice == "Random Forest Classifier":
+    params['n_estimators'] = st.slider("Estimators", 50, 500, 100)
+elif model_choice == "Support Vector Machine":
+    params['C'] = st.slider("Penalty (C)", 0.01, 10.0, 1.0)
+
+if run_fast:
     if model_choice in ["Ridge Regression", "Lasso Regression"]:
-        params['alpha'] = st.slider("Alpha", 0.01, 10.0, 1.0)
+        params['alpha'] = 0.1
     elif model_choice == "Gradient Boosting Regression":
-        params['n_estimators'] = st.slider("Estimators", 50, 1000, 100)
-        params['learning_rate'] = st.slider("Learning Rate", 0.01, 0.5, 0.1)
-        params['max_depth'] = st.slider("Max Depth", 2, 10, 3)
+        params['n_estimators'] = 50
+        params['learning_rate'] = 0.2
+        params['max_depth'] = 3
     elif model_choice == "Random Forest Classifier":
-        params['n_estimators'] = st.slider("Estimators", 50, 500, 100)
+        params['n_estimators'] = 100
     elif model_choice == "Support Vector Machine":
-        params['C'] = st.slider("Penalty (C)", 0.01, 10.0, 1.0)
+        params['C'] = 0.1
 
-    if run_fast:
-        if model_choice in ["Ridge Regression", "Lasso Regression"]:
-            params['alpha'] = 0.1
-        elif model_choice == "Gradient Boosting Regression":
-            params['n_estimators'] = 50
-            params['learning_rate'] = 0.2
-            params['max_depth'] = 3
-        elif model_choice == "Random Forest Classifier":
-            params['n_estimators'] = 100
-        elif model_choice == "Support Vector Machine":
-            params['C'] = 0.1
+# --- Train and Predict ---
+model_trained = None
+scaler = None
 
-    # --- Train and Predict ---
-    model_trained = None
-    scaler = None
+if st.button("🚀 Train and Predict"):
+    with st.spinner("Training model..."):
+        scaler, X_scaled = scale_features(X)
 
-    if st.button("🚀 Train and Predict"):
-        with st.spinner("Training model..."):
-            scaler, X_scaled = scale_features(X)
-            if model_choice in ["Random Forest Classifier", "Support Vector Machine"]:
-                y_target = y_class
-            else:
-                y_target = y_log
+        # Choose correct target
+        if model_choice in ["Random Forest Classifier", "Support Vector Machine"]:
+            y_target = y_class
+        else:
+            y_target = y_log
 
-            model_trained = cached_train_model(model_choice, params, X_scaled, y_target)
+        model_trained = cached_train_model(model_choice, params, X_scaled, y_target)
 
-            # Save to session
-            st.session_state['model_trained'] = model_trained
-            st.session_state['scaler'] = scaler
+        # Save model to session state
+        st.session_state['model_trained'] = model_trained
+        st.session_state['scaler'] = scaler
 
-            y_pred = predict(model_trained, X_scaled)
-            metrics = calculate_metrics(model_choice, y, y_pred, y_class)
-
-            if model_choice in ["Ridge Regression", "Lasso Regression", "Gradient Boosting Regression"]:
-                st.success(f"🔵 R²: {metrics['R2']:.3f} | 🔵 MAE: {metrics['MAE']:.2f} | 🔵 RMSE: {metrics['RMSE']:.2f}")
-            else:
-                st.success(f"🟢 F1 Score: {metrics['F1']:.3f} | 🟢 Accuracy: {metrics['Accuracy']:.3f}")
-
-    # Future Prediction Section
-    st.subheader("📅 Set Future Prediction Date")
-    future_year = st.slider("Predict Year", 2025, 2035, 2026)
-    future_month = st.selectbox("Predict Month", range(1, 13))
-    future_day = st.slider("Predict Day", 1, 28, 15)
-
-    if st.button("📅 Make Future Predictions"):
-        if 'model_trained' not in st.session_state:
-            st.error("❗ Please train a model first.")
-            st.stop()
-
-        model_trained = st.session_state['model_trained']
-        scaler = st.session_state['scaler']
-
-        # Prepare input for prediction
-        future_input = pd.DataFrame({'Date': [pd.Timestamp(future_year, future_month, future_day)]})
-        features = ['year', 'month', 'day', 'DayOfYear', 'WeekOfYear', 'Sin_Month', 'Cos_Month']
-        future_input['year'] = future_input['Date'].dt.year
-        future_input['month'] = future_input['Date'].dt.month
-        future_input['day'] = future_input['Date'].dt.day
-        future_input['DayOfYear'] = future_input['Date'].dt.dayofyear
-        future_input['WeekOfYear'] = future_input['Date'].dt.isocalendar().week
-        future_input['Sin_Month'] = np.sin(2 * np.pi * future_input['month'] / 12)
-        future_input['Cos_Month'] = np.cos(2 * np.pi * future_input['month'] / 12)
-
-        scaler, _ = scale_features(X)
-        future_scaled = scaler.transform(future_input[features])
-
-        future_pred = predict(model_trained, future_scaled)
+        # Predict on training data
+        y_pred = predict(model_trained, X_scaled)
+        metrics = calculate_metrics(model_choice, y, y_pred, y_class)
 
         if model_choice in ["Ridge Regression", "Lasso Regression", "Gradient Boosting Regression"]:
-            future_temp = np.expm1(future_pred)
-            st.success(f"📅 Predicted Temperature for {future_day}/{future_month}/{future_year}: **{future_temp[0]:.2f}°C**")
+            st.success(f"🔵 R²: {metrics['R2']:.3f} | 🔵 MAE: {metrics['MAE']:.2f} | 🔵 RMSE: {metrics['RMSE']:.2f}")
         else:
-            label = 'Extreme Event' if future_pred[0] == 1 else 'Normal'
-            st.success(f"📅 Predicted Climate Event for {future_day}/{future_month}/{future_year}: **{label}**")
+            st.success(f"🟢 F1 Score: {metrics['F1']:.3f} | 🟢 Accuracy: {metrics['Accuracy']:.3f}")
+
+# --- Future Prediction ---
+st.subheader("📅 Set Future Prediction Date")
+
+future_year = st.slider("Predict Year", 2025, 2035, 2026)
+future_month = st.selectbox("Predict Month", range(1, 13))
+future_day = st.slider("Predict Day", 1, 28, 15)
+
+if st.button("📅 Make Future Predictions"):
+    if 'model_trained' not in st.session_state:
+        st.error("❗ Please train a model first.")
+        st.stop()
+
+    model_trained = st.session_state['model_trained']
+    scaler = st.session_state['scaler']
+
+    # Prepare input for prediction
+    future_input = pd.DataFrame({'Date': [pd.Timestamp(future_year, future_month, future_day)]})
+    features = ['year', 'month', 'day', 'DayOfYear', 'WeekOfYear', 'Sin_Month', 'Cos_Month']
+
+    future_input['year'] = future_input['Date'].dt.year
+    future_input['month'] = future_input['Date'].dt.month
+    future_input['day'] = future_input['Date'].dt.day
+    future_input['DayOfYear'] = future_input['Date'].dt.dayofyear
+    future_input['WeekOfYear'] = future_input['Date'].dt.isocalendar().week
+    future_input['Sin_Month'] = np.sin(2 * np.pi * future_input['month'] / 12)
+    future_input['Cos_Month'] = np.cos(2 * np.pi * future_input['month'] / 12)
+
+    # Scale using existing scaler
+    future_scaled = scaler.transform(future_input[features])
+
+    future_pred = predict(model_trained, future_scaled)
+
+    if model_choice in ["Ridge Regression", "Lasso Regression", "Gradient Boosting Regression"]:
+        future_temp = np.expm1(future_pred)
+        st.success(f"📅 Predicted Temperature for {future_day}/{future_month}/{future_year}: **{future_temp[0]:.2f}°C**")
+    else:
+        label = 'Extreme Event' if future_pred[0] == 1 else 'Normal'
+        st.success(f"📅 Predicted Climate Event for {future_day}/{future_month}/{future_year}: **{label}**")
