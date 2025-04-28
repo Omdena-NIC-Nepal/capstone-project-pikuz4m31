@@ -19,7 +19,8 @@ folium
 contextily
 earthpy
 scikit-image
-
+tqdm
+tensorflow
 # -------------------------
 # CLIMATE & WEATHER DATA
 # -------------------------

@@ -66,4 +66,21 @@ for col in numeric_cols:
     if not outliers_df.empty:
         outliers[col] = len(outliers_df)
 
-st.write(f"Outliers detected in columns: {outliers}")
+# st.write(f"Outliers detected in columns: {outliers}")
+
+
+# Boxplots for Visualizing Outliers
+st.subheader("Boxplot Visualization of Outliers")
+
+fig_outliers, axs = plt.subplots(len(numeric_cols), 1, figsize=(10, 5 * len(numeric_cols)))
+
+# Handle single subplot case
+if len(numeric_cols) == 1:
+    axs = [axs]
+
+for i, col in enumerate(numeric_cols):
+    sns.boxplot(x=df[col], ax=axs[i], color='lightcoral')
+    axs[i].set_title(f"Boxplot for {col}")
+    axs[i].set_xlabel(col)
+
+st.pyplot(fig_outliers)
