@@ -1,72 +1,100 @@
-# CORE
+# # CORE
+# numpy
+# pandas
+# scikit-learn
+# matplotlib
+# seaborn
+# scipy
+
+# # GEO & EARTH
+# geopandas
+# rasterio
+# shapely
+# folium
+# contextily
+# earthpy
+# scikit-image
+# tqdm
+
+# # CLIMATE
+# xarray
+# netCDF4
+# cfgrib
+# h5py
+# cdsapi
+# eofs
+
+# # VISUALIZATION
+# plotly
+# streamlit
+# altair
+
+# # MACHINE LEARNING
+# xgboost
+# lightgbm
+# catboost
+# joblib
+# feature-engine
+
+# # NLP
+# nltk
+# spacy
+# transformers
+# sentence-transformers
+# beautifulsoup4
+# newspaper3k
+# textblob
+# textacy
+
+# # UTILITIES
+# requests
+# aiohttp
+# python-dotenv
+# pyyaml
+# loguru
+# boto3
+
+# # TESTING
+# pytest
+
+# # TIME-SERIES
+# prophet
+# statsmodels
+
+# # DATABASE
+# sqlalchemy
+
+# # DATA VERSION CONTROL
+# dvc
+
+# # DEEP LEARNING (Pick only ONE: Tensorflow OR PyTorch)
+# tensorflow
+# # torch  # Uncomment if using PyTorch instead
+
+
+# Core
 numpy
 pandas
 scikit-learn
 matplotlib
 seaborn
-scipy
 
-# GEO & EARTH
+# Geospatial
 geopandas
-rasterio
 shapely
-folium
-contextily
-earthpy
-scikit-image
-tqdm
 
-# CLIMATE
-xarray
-netCDF4
-cfgrib
-h5py
-cdsapi
-eofs
-
-# VISUALIZATION
-plotly
+# Visualization
 streamlit
-altair
+plotly
 
-# MACHINE LEARNING
+# Machine Learning
 xgboost
 lightgbm
 catboost
 joblib
-feature-engine
 
-# NLP
-nltk
-spacy
-transformers
-sentence-transformers
-beautifulsoup4
-newspaper3k
-textblob
-textacy
-
-# UTILITIES
+# Utilities
 requests
-aiohttp
-python-dotenv
-pyyaml
-loguru
-boto3
 
-# TESTING
-pytest
-
-# TIME-SERIES
-prophet
-statsmodels
-
-# DATABASE
-sqlalchemy
-
-# DATA VERSION CONTROL
-dvc
-
-# DEEP LEARNING (Pick only ONE: Tensorflow OR PyTorch)
-tensorflow
-# torch  # Uncomment if using PyTorch instead
+# Optional (if you use them)
+tqdm
