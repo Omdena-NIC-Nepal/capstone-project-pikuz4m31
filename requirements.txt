@@ -1,17 +1,12 @@
-# -------------------------
-# CORE DATA SCIENCE
-# -------------------------
+# CORE
 numpy
 pandas
 scikit-learn
 matplotlib
 seaborn
 scipy
-pandas-profiling
 
-# -------------------------
-# GEOSPATIAL & REMOTE SENSING
-# -------------------------
+# GEO & EARTH
 geopandas
 rasterio
 shapely
@@ -20,10 +15,8 @@ contextily
 earthpy
 scikit-image
 tqdm
-tensorflow
-# -------------------------
-# CLIMATE & WEATHER DATA
-# -------------------------
+
+# CLIMATE
 xarray
 netCDF4
 cfgrib
@@ -31,25 +24,19 @@ h5py
 cdsapi
 eofs
 
-# -------------------------
-# VISUALIZATION & DASHBOARD
-# -------------------------
+# VISUALIZATION
 plotly
 streamlit
 altair
 
-# -------------------------
 # MACHINE LEARNING
-# -------------------------
 xgboost
 lightgbm
 catboost
 joblib
 feature-engine
 
-# -------------------------
 # NLP
-# -------------------------
 nltk
 spacy
 transformers
@@ -59,42 +46,27 @@ newspaper3k
 textblob
 textacy
 
-# -------------------------
 # UTILITIES
-# -------------------------
 requests
 aiohttp
-tqdm
 python-dotenv
 pyyaml
 loguru
 boto3
-flask
 
-# -------------------------
 # TESTING
-# -------------------------
 pytest
 
-# -------------------------
-# DEEP LEARNING (Optional)
-# -------------------------
-tensorflow  # If you plan to use deep learning
-# OR 
-pytorch
-
-# -------------------------
-# TIME-SERIES FORECASTING
-# -------------------------
+# TIME-SERIES
 prophet
 statsmodels
 
-# -------------------------
-# DATABASE INTEGRATION (Optional)
-# -------------------------
+# DATABASE
 sqlalchemy
 
-# -------------------------
-# DATA VERSION CONTROL (Optional)
-# -------------------------
+# DATA VERSION CONTROL
 dvc
+
+# DEEP LEARNING (Pick only ONE: Tensorflow OR PyTorch)
+tensorflow
+# torch  # Uncomment if using PyTorch instead
