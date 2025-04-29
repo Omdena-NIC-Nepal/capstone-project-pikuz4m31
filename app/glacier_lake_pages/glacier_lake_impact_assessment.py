@@ -123,24 +123,6 @@ filtered_gdf = filtered_gdf[
 
 st.write(f"Remaining rows after cleaning invalid coordinates: {len(filtered_gdf)}")
 
-# # 5. Display Map with Folium
-# if not filtered_gdf.empty:
-#     st.subheader("Filtered Data Map View")
-#     avg_lat = filtered_gdf['latitude'].mean()
-#     avg_lon = filtered_gdf['longitude'].mean()
-#     m = folium.Map(location=[avg_lat, avg_lon], zoom_start=6)
-
-#     for _, row in filtered_gdf.iterrows():
-#         folium.Marker(
-#             location=[row['latitude'], row['longitude']],
-#             popup=row.get('gl_name', 'Unnamed Lake'),
-#             tooltip=row.get('Flood_Risk', 'No risk data')
-#         ).add_to(m)
-
-#     st_folium(m, width=800, height=500)
-# else:
-#     st.warning("No valid coordinates found in the filtered data to display on the map.")
-# 5. Display Map with Folium
 if not filtered_gdf.empty:
     st.subheader("Filtered Data Map View")
     
