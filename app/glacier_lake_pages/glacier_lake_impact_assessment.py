@@ -86,7 +86,11 @@ st.write(f"Displaying data from {year_range[0]} to {year_range[1]}")
 
 
 if 'basin' in gdf.columns:
-    selected_basin = st.selectbox("Select Basin to filter by:", options=sorted(gdf['basin'].dropna().unique()))
+    # selected_basin = st.selectbox("Select Basin to filter by:", options=sorted(gdf['basin'].dropna().unique()))
+    basin_options = sorted(gdf['basin'].dropna().unique())
+    default_basin_index = basin_options.index("Koshi") if "Koshi" in basin_options else 0
+    selected_basin = st.selectbox("Select Basin to filter by:", options=basin_options, index=default_basin_index)
+
     filtered_gdf = filtered_gdf[filtered_gdf['basin'] == selected_basin]
 
     if 'sub_basin' in gdf.columns:
