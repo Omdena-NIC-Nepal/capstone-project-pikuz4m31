@@ -99,3 +99,4 @@ requests
 # Optional (if you use them)
 tqdm
 folium
+streamlit-folium
