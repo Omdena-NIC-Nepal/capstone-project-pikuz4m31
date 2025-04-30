@@ -193,9 +193,17 @@ import seaborn as sns
 import plotly.express as px
 from geopy.distance import geodesic
 from mpl_toolkits.mplot3d import Axes3D
-
+import os
 # Load and clean dataset
-df = pd.read_csv('../feature_engineering/weather_and_temp_feature_engineering.csv')
+# df = pd.read_csv('../feature_engineering/weather_and_temp_feature_engineering.csv')
+# Get current file's directory
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construct absolute path to the CSV
+csv_path = os.path.join(current_dir, '..','feature_engineering', 'weather_and_temp_feature_engineering.csv')
+
+# Load dataset
+df = pd.read_csv(csv_path)
 df['date'] = pd.to_datetime(df['date'])
 df = df.sort_values(by='date')
 
