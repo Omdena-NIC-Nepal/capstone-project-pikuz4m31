@@ -1,0 +1,7 @@
+Title: Nepal_-_Country_Climate_and_Development_Report_-_I.txt
+Entities: Nepal - Country Climate and Development Report - International Finance Corporation, 14, 07:00:00, GMT
+Sentiment: Sentiment(polarity=0.0875, subjectivity=0.1375)
+Summary: Title: Nepal - Country Climate and Development Report - International Finance Corporation (IFC)
+Published on: Wed, 14 Sep 2022 07:00:00 GMT
+Source: International Finance Corporation (IFC)
+Description: <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPYWF6S0xyank1MlN3bVJVZFprWlVfeTN5aS1SM0IwejRTZ1NCeWpaOUE2Sl9xZFZuMWRzaHJleWpMZG9SNTVnbzRNVE9mOEJUZFVkRXFwdjNWVHdZTHAtUG9USXotNHFEbm8xekZTcm4wTFZ4cUU3OTNBc1NkTHZPOXZkUzZwejVZdTRyRVFwRDU3dGc?oc=5" target="_blank">Nepal - Country Climate and

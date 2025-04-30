@@ -1,0 +1,7 @@
+Title: Nepal’s_climate_change_issue_raised_in_UK_Parliame.txt
+Entities: UK, 16 Jan 2025, 08:00:00, GMT, CBMimwFBVV95cUxPaDhEUlowVGd4ckRHUnhtQ3ZBd2lLajJ4YllkVHpzOTZuZS1zQ2VIUWtsSkFzMnJQT2I0aDNFZUctVEc4UG1BN1pGc3Y1N0ROTWNWa0JvbVNEOWdQU3ZVM1BzbFRuWW41NHZQdlVQOGZSaHlPQ3dFV3NfZllDdXJ6V2NYUkJ0dkltOWxGUzRLRVBUUHlYOXZnRGFDUQ?oc=5, UK
+Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
+Summary: Title: Nepal’s climate change issue raised in UK Parliament - The Kathmandu Post
+Published on: Thu, 16 Jan 2025 08:00:00 GMT
+Source: The Kathmandu Post
+Description: <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPaDhEUlowVGd4ckRHUnhtQ3ZBd2lLajJ4YllkVHpzOTZuZS1zQ2VIUWtsSkFzMnJQT2I0aDNFZUctVEc4UG1BN1pGc3Y1N0ROTWNWa0JvbVNEOWdQU3ZVM1BzbFRuWW41NHZQdlVQOGZSaHlPQ3dFV3NfZllDdXJ6V2NYUkJ0dkltOWxGUzRLRVBUUHlYOXZnRGFDUQ?oc=5" target="_blank">Nepal’s climate change issue raised in UK Parliament

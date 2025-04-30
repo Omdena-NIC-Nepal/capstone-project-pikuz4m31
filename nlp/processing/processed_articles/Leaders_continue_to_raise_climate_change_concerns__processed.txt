@@ -1,0 +1,8 @@
+Title: Leaders_continue_to_raise_climate_change_concerns_.txt
+Entities: The Himalayan Times, 13 Jan 2025, 08:00:00, GMT, The Himalayan Times
+Description
+Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
+Summary: Title: Leaders continue to raise climate change concerns - The Himalayan Times
+Published on: Mon, 13 Jan 2025 08:00:00 GMT
+Source: The Himalayan Times
+Description: <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxOUlRwdWFCR1JPdTVUcnJRMEtDQWZ4X3YyZGVuTXRqU2c2Y3Y4RkpvZnU5a1JmeGxDMEZiQWRjdE5VbVpIRUU1LUd2d0VRX0MzV0tRQk9BV2JIc0lsTmlLbW1aVGVqWnB1R1RVNlItZXkya1I3WXpONXN1Y1dwcmVBUmUtZEtHYmx4MVlRTWxhRFdYZEnSAVxBVV95cUxNSFVzYy1WNzdONlNPMHE5X2Fmb2hUZEVOcmFVcHJtUXduOTJZMDk0NDRYeEsta3JValZxUVNDak

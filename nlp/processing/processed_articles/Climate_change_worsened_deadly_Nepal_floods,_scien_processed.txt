@@ -1,0 +1,7 @@
+Title: Climate_change_worsened_deadly_Nepal_floods,_scien.txt
+Entities: Nepal, 17, 2024, 07:00:00, GMT, Nepal
+Sentiment: Sentiment(polarity=-0.012500000000000011, subjectivity=0.3375)
+Summary: Title: Climate change worsened deadly Nepal floods, scientists say - Phys.org
+Published on: Thu, 17 Oct 2024 07:00:00 GMT
+Source: Phys.org
+Description: <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNeEo1TnJvMnE0Wlk3MFN3TkJ5dzR4Ym90eWFLWmJ2T1FJM1l4N1pmRkQ5V2VwZkZEVkVJbU9wZTFudVhQUGhaS3FLbG9aVzBQSUhhcDgyNklrNGNob1ZXR2lySk1Wa1J3XzlZVHBndEVTQ0lOU0lTTHF0dkxEMWtOMtIBf0FVX3lxTE1ZMC1EVzk4ZzhuMFhNRkNXYjUxRmJBQk5pN19BMk9NMHRQM3UxMDhHZXd1UThsV083UDgtYXdPT0ZjMUc5Z2E4dHhyRzJkZ1Vzb053cjAwbmVVYn

@@ -1,0 +1,8 @@
+Title: Climate_crisis_stings_Nepal’s_honey_gatherers,_thr.txt
+Entities: Nepal’s, 06, 2024, 07:00:00, GMT, Al Jazeera
+Description, Nepal’s
+Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
+Summary: Title: Climate crisis stings Nepal’s honey gatherers, threatens tradition - Al Jazeera
+Published on: Thu, 06 Jun 2024 07:00:00 GMT
+Source: Al Jazeera
+Description: <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPcHBsWnNJX01IVFJnXzdsUTVyUldMeTg5eVNfMjNWOHFGcDFrRUJKY2JzUmQtS2VtRmU5UTFpYnoxUHlCUERmd2hFb2g5YVdlZ083V2pZeXNscElzUk9kd0docGxxLW9EVFRyZUlmOWhoZGdEcTNxZklUNkpyajRqWndjc1c2NHJyUm1NbkttSHZuUGtQYVBuWW9xdXBUM1FaYW1pZ0xCQ1doUUJwN1d2SVZubE_SAboBQVVfeXFMTjNFdFVRbW9oMnVVVmNoRnh1dUVYOGR

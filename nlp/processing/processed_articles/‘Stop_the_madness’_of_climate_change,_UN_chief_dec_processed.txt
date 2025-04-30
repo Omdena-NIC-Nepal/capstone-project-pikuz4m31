@@ -1,0 +1,12 @@
+Title: ‘Stop_the_madness’_of_climate_change,_UN_chief_dec.txt
+Entities: UN, UN News, 30, 07:00:00, GMT, UN News
+Description, UN, declares</a>&nbsp;&nbsp;<font, News</font>
+
+Full Content
+Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
+Summary: Title: ‘Stop the madness’ of climate change, UN chief declares - UN News
+Published on: Mon, 30 Oct 2023 07:00:00 GMT
+Source: UN News
+Description: <a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE1raEpZeExaWFhsM1BKQjlPMFNxcV9EazBPdWhHNmJBZ09VcWx2ZnlONkxPZkM1UHBib3lsWlB3MWhabHg2a2VqQlpJcXN4bGdmNTdzQUc5aw?oc=5" target="_blank">‘Stop the madness’ of climate change, UN chief declares</a>&nbsp;&nbsp;<font color="#6f6f6f">UN News</font>
+
+Full Content:

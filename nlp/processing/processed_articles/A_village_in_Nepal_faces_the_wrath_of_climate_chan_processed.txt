@@ -1,0 +1,10 @@
+Title: A_village_in_Nepal_faces_the_wrath_of_climate_chan.txt
+Entities: Nepal, 08:00:00, GMT, Asia News Network
+Description, Nepal, color="#6f6f6f">Asia News Network</font>
+
+Full Content
+Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
+Summary: Title: A village in Nepal faces the wrath of climate change - Asia News Network
+Published on: Mon, 17 Feb 2025 08:00:00 GMT
+Source: Asia News Network
+Description: <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNNXNlSmVvZG1rTmJvZzRqMFZZMjMxbWZlVE0xVjNyYXFhZy1pd2llMWF6N1BBdWg1X2xJY1JDVGU0TlRfOUhkVEwwSm5YNGJLemdPUmhHN09oczFHeF9JR3YweWRxRXBxNldBVXphb3V4X2h4TEVRLTVLMEQwYUZyby1aLU4?oc=5" target="_blank">A village in Nepal faces the wrath of climate change</a>&nbsp;&nbsp;<font color="#6f6

@@ -1,0 +1,9 @@
+Title: Nepal_rains_intensified_by_human-induced_climate_c.txt
+Entities: Nepal, 17, GMT, scientists</a>&nbsp;&nbsp;<font color="#6f6f6f">National Herald</font>
+
+Full Content
+Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
+Summary: Title: Nepal rains intensified by human-induced climate change: scientists - National Herald
+Published on: Thu, 17 Oct 2024 11:21:06 GMT
+Source: National Herald
+Description: <a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxQTG05MzdxczBfYjlRMUJFelF6N1FUdGEtODVEQ2JfRWVJRnFCcW9qOTlxSFVxNUFwNWljMHF3d19BMmhXMmhSWUhqc3BtVmdkeVFYbUFRZk11NVh0UFlVOGc1Zmh6NWFVX0xRTDduTXFzZFdfMi1STmN3TDVKeDF3OTUxWFZGdGduMDc2SFZncldBNm42TndJYlZfSG5xUW1ldGp3MGRfcFpWNFBjME9vS3hKck5WWFpCeV9HNlZ30gHLAUFVX3lxTE1SZ2x1

@@ -1,0 +1,7 @@
+Title: Successful_localization_of_disaster_risk_reduction.txt
+Entities: Nepal, UN, 28, 2024, 07:00:00, GMT, CBMixAFBVV95cUxNUkNsZ25JQmNkTFFGU1UzWGNXaHFCLVYyZkNNYi1BVFowbXgtWUhGUFVzTkRTR0pwVjBTZWx5LVFad1BBY1hHdk1USWFTQ19wVHZxVUhTbnc0Y3pfSmtQNWRSYV9GVERVVmhOcUpHVUcwZjUwTVQ5TmQzeVZ1WTZrX0FtSVlkc1ZNVE5mRjNLbzdvQnJ3ank4RThYaGtmNGd5Tk01eWR3MHlOS3doNTZ0ZDZKMWNyMHZCbXN3UHpZZDNtTGJZ?oc=5, Nepal, UN
+Sentiment: Sentiment(polarity=0.3, subjectivity=0.5)
+Summary: Title: Successful localization of disaster risk reduction efforts in Nepal is supported through well-coordinated UN partners present at the provincial levels, and innovative research partnership - World Meteorological Organization WMO
+Published on: Fri, 28 Jun 2024 07:00:00 GMT
+Source: World Meteorological Organization WMO
+Description: <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxNUkNsZ25JQmNkTFFGU1UzWGNXaHFCLVYyZkNNYi1BVFowbXgtWUhGUFVzTkRTR0pwVjBTZWx5LVFad1BBY1hHdk1USWFTQ19wVHZx

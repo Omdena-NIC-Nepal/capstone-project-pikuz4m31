@@ -1,0 +1,7 @@
+Title: Climate_crisis_driving_families_from_Nepal’s_mount.txt
+Entities: Nepal, 08:00:00, GMT, Nepal
+Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
+Summary: Title: Climate crisis driving families from Nepal’s mountain, hill villages - The Kathmandu Post
+Published on: Sat, 08 Feb 2025 08:00:00 GMT
+Source: The Kathmandu Post
+Description: <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOME9JQi1LNU4xZU4xeloxT3dWR2ttY1doNWhlSVVuSi1rcjVwdjVZQjVwRmU1VVdMSWhKRFozcVFWcE11aEtQUV9hbXdtOXc1RU9aRW1Jc29wMGxJRF90VHZhbklGZ1dydW11R1d4aE5Yczk5OXowWVUwcU9FcFI2eXFOLW5NWHBBb2dXR25HLWlWQmVKOUFrY2p4cTR6N1JNSGtPRm9UcGttV016REFuYXo0SQ?oc=5" target="_blank">Clim

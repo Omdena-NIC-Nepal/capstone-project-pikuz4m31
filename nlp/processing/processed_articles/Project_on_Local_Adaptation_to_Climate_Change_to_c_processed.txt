@@ -1,0 +1,8 @@
+Title: Project_on_Local_Adaptation_to_Climate_Change_to_c.txt
+Entities: Finland, Nepal, EU - Valtioneuvosto
+, 28, 2024, 07:00:00, GMT, CBMizwFBVV95cUxNX0hlclpMUFhfcDlHNXloRDBJaVQ3bUs5eVFsbHllNjRENTFNQmY3cHZ3cTJJby15eHQ5QkhPMTg4Z3dPelNvLUhUSERFVmU3aFFWWi1XRlJfRFBIb1dYWkxKWXFiRlExenF3cU83eS1iSWZMWEFIVEhzVVVnTlYzTlhqQnZoeVB4Y2VGTDJrazBkVFlGQnd6cmpZWHVNQ2NXRDJoNEFIREJ6Z3c3SnRmblc3YnUzZ0kyT3A5eTRjSkNTcGxmU1Y0Y3d1REdfOHM?oc=5, Local Adaptation to Climate Change, Finland, Nepal
+Sentiment: Sentiment(polarity=0.0875, subjectivity=0.1375)
+Summary: Title: Project on Local Adaptation to Climate Change to continue Finland’s close cooperation with Nepal and EU - Valtioneuvosto
+Published on: Mon, 28 Oct 2024 07:00:00 GMT
+Source: Valtioneuvosto
+Description: <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxNX0hlclpMUFhfcDlHNXloRDBJaVQ3bUs5eVFsbHllNjRENTFNQmY3cHZ3cTJJby15eHQ5QkhPMTg4Z3dPelNvLUhUSERFVmU3aFFWWi1XRlJfRFBIb1dYWkxKWXFiRlExenF3cU83eS1iSWZMWEFIVEhzVVVnTlYzTlhqQnZoeVB4Y2VGTDJrazBkVFlGQnd6cmpZWHVNQ2NXRDJoNEFIREJ6Z3c3SnRmblc3Yn

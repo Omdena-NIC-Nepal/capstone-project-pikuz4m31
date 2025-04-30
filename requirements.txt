@@ -72,7 +72,7 @@
 # # torch  # Uncomment if using PyTorch instead
 
 
-# Core
+# Core Libraries
 numpy
 pandas
 scikit-learn
@@ -102,14 +102,26 @@ requests==2.28.1
 tqdm
 nbformat
 
-# Climate/Niche tools
+# Climate/Niche Tools
 pythermalcomfort
 climate_indices
 
-# NLP
+# NLP Libraries
 beautifulsoup4==4.11.1
 spacy>=3.7.0
 textblob==0.15.3
+gnews
+newspaper3k
+lxml[html_clean]
+bertopic[all]
+nltk
+gensim
+transformers
+pyldavis
+langdetect
+sumy
+vaderSentiment
+textstat
 
 # AWS SDK
 botocore

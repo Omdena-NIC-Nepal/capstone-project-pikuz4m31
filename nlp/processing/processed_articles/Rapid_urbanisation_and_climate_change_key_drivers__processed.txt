@@ -1,0 +1,7 @@
+Title: Rapid_urbanisation_and_climate_change_key_drivers_.txt
+Entities: Nepal - World Weather Attribution, 16, 2024, 07:00:00, GMT
+Sentiment: Sentiment(polarity=-0.08611111111111112, subjectivity=0.625)
+Summary: Title: Rapid urbanisation and climate change key drivers of dramatic flood impacts in Nepal - World Weather Attribution
+Published on: Wed, 16 Oct 2024 07:00:00 GMT
+Source: World Weather Attribution
+Description: <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxPUHg5LVRLenVzb09kcUp2U3VlcjB1cXB1bGxTY0F1aUFSZUxFR0NXalRWd1VXNHRQY21tX1BkbjJ3TV9xamQySXZTVV8zTFRhUFF2YW85YXlVLXRNMGxoMEk1RnlaWlNxT3NOZlFadVpPczdlYmV1bXFWcUFqd3o4TmhDSWNWWmYzZXdLS2ttQnoxdFF6T1dxTkV1cGQycXg3VjdpbEpiVGswR1FtaHViRVd

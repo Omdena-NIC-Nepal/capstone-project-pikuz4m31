@@ -1,0 +1,7 @@
+Title: In_Nepal’s_Mustang_Region,_Climate_“Loss_and_Damag.txt
+Entities: Nepal’s Mustang Region, a Tibetan Community, 14 May 2024, 07:00:00, GMT, Nepal’s, a Tibetan Community
+Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
+Summary: Title: In Nepal’s Mustang Region, Climate “Loss and Damage” Puts the Survival of a Tibetan Community in Question - The Nation
+Published on: Tue, 14 May 2024 07:00:00 GMT
+Source: The Nation
+Description: <a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxQQ0NVYUJteGZZY2FURWVoZUZrVmJHNXU3Y0pON1BOd2t6Um40WUhrN2lsWnJXRG9xYV9PeEc0aGtIX2dobzIySjFlWHJLbDZSQ1VreHBhT2dQT2pXRDF1LVN5TGNpNk9DdWxrcmtodDZaRThJV1MwcGxjc0VjMV9mSzM2c9IBiwFBVV95cUxPNy10SjNnaldNeG5VQ2NQT3Y0MTZRQVBYVEtuci15VVVHd1NpZ3BhYnRQ

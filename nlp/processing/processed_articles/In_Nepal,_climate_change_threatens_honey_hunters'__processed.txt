@@ -1,0 +1,7 @@
+Title: In_Nepal,_climate_change_threatens_honey_hunters'_.txt
+Entities: Nepal, 08, 2024, 07:00:00, GMT, Nepal
+Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
+Summary: Title: In Nepal, climate change threatens honey hunters' tradition - dw.com
+Published on: Sat, 08 Jun 2024 07:00:00 GMT
+Source: dw.com
+Description: <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNcl9sa1hFN1Zaak9aNEFTRWg5WXhieC1aQ0JPQUpxNjhrRG1Sa2Y2TF9tSXV6RDRDZ1Zua18tUVBIVE02dEdFYnpGYWJwRWJyY0pvLVlES1ZlOG93VWUtRHl1S182U3lHdG1KeW5VS3dyUTY5WGY3NGNKLXFYSS1DblZMVVV1OVFzYVpXODV1dVV1RFNC?oc=5" target="_blank">In Nepal, climate change threatens honey hunters' tradition</a>&nbsp;&nbsp;<fon

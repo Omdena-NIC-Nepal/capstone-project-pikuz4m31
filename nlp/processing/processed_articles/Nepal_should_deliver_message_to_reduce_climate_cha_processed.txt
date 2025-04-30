@@ -1,0 +1,8 @@
+Title: Nepal_should_deliver_message_to_reduce_climate_cha.txt
+Entities: Nepal, NC, Deuba, The Himalayan Times, 10 Jan 2025, 08:00:00, GMT, The Himalayan Times
+Description, NC
+Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
+Summary: Title: Nepal should deliver message to reduce climate change impacts: NC President Deuba - The Himalayan Times
+Published on: Fri, 10 Jan 2025 08:00:00 GMT
+Source: The Himalayan Times
+Description: <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxNelBNbkdYYUYxTFhYQlFwVFZaM21lWmgwczhuakt5dzFQcGI1TWdtaEFaTmwzcG5DWFluRVEzYThVMy1wdTBpdDZ1T3dHNUJSNXc1SEliTWRDUGxfUFl5OTFVVnUwTlFGalJLRFZVaS1QOEFnQ0dPNFhNYmhLN2pxbzhUVU1ZcGdhNm9YeEF4amU5d2VTSWpfOHg0N3NfVGkxdzQwbk4tTnZsYXdqWjVLWm05Nk8tQmPSAVxBVV

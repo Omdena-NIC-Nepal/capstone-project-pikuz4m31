@@ -1,0 +1,7 @@
+Title: Strengthening_a_Climate_Smart,_Green,_and_Resilien.txt
+Entities: Green, Resilient Education System, Nepal - UNESCO, 2024, 07:00:00, GMT, UNESCO, CBMiqAFBVV95cUxQZ0daR2dtWW5mRldIZEcwa2RVM2ZWYlpkeWsxMWdwd2wzWWRDdEk3QjFhbmRPLUtPbXR0SUFvdHl2QktvZDJod2tzZHJPeEs4bFVueUFZaVcxb3ZHYzJGRU95VUNmeTkxNFpyM1BGVEFKZ0NDWERuNjE1WkRzX0hkRFNwUzRERWpUcTU0T2VxMmJXNmlPdlVQamxFbG03Nk9FY1FBcERERHI?oc=5, Green, Resilient Education System
+Sentiment: Sentiment(polarity=0.06309523809523808, subjectivity=0.405952380952381)
+Summary: Title: Strengthening a Climate Smart, Green, and Resilient Education System in Nepal - UNESCO
+Published on: Mon, 19 Aug 2024 07:00:00 GMT
+Source: UNESCO
+Description: <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZ0daR2dtWW5mRldIZEcwa2RVM2ZWYlpkeWsxMWdwd2wzWWRDdEk3QjFhbmRPLUtPbXR0SUFvdHl2QktvZDJod2tzZHJPeEs4bFVueUFZaVcxb3ZHYzJGRU95VUNmeTkxNFpyM1BGVEFKZ0NDWERuNjE1WkRzX0hkRFNwUzRERWpUcTU0T2VxMmJXNmlPdlVQamxFbG03Nk9FY1FBcERERHI?oc=5" target="_blank">Strengthening a Climate Smart, Gre

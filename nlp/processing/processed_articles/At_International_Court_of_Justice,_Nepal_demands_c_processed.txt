@@ -1,0 +1,7 @@
+Title: At_International_Court_of_Justice,_Nepal_demands_c.txt
+Entities: International Court of Justice, Nepal, 11, Dec 2024, 08:00:00, GMT, CBMivAFBVV95cUxQZDByMXl6OFhLQWxkck1HMjVuMEpMNlJNZ3VSMlhuQVR0N1FyelJKZmZxNG5ob1dYbm9fTFlHOXdKQzlnaUQxMUcxaE52ZWloblJLNkk3SnhiX1lhX0FyaURHMzlOelFWRmR6bHVKNWIzVlNvb09SWG1TaDFOLU9NSTJmV1ZGYkVkRVdqT0laenQ1RDkzaklKQTYtZjU3QmFabGVmRXA2MUltTXQzY2VGWkVPV0VielBnNnJIcg?oc=5, target="_blank">At International Court of Justice, Nepal
+Sentiment: Sentiment(polarity=0.0875, subjectivity=0.1375)
+Summary: Title: At International Court of Justice, Nepal demands climate justice - The Kathmandu Post
+Published on: Wed, 11 Dec 2024 08:00:00 GMT
+Source: The Kathmandu Post
+Description: <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxQZDByMXl6OFhLQWxkck1HMjVuMEpMNlJNZ3VSMlhuQVR0N1FyelJKZmZxNG5ob1dYbm9fTFlHOXdKQzlnaUQxMUcxaE52ZWloblJLNkk3SnhiX1lhX0FyaURHMzlOelFWRmR6bHVKNWIzVlNvb09SWG1TaDFOLU9NSTJmV1ZGYkVkRVdqT0laenQ1RDkzaklKQTYtZjU3QmFabGVmRXA2MUltTXQzY2VGWkVPV0VielBnNnJIcg?oc=5" target="_bla

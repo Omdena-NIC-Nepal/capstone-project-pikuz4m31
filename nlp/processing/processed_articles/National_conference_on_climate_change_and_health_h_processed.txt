@@ -1,0 +1,7 @@
+Title: National_conference_on_climate_change_and_health_h.txt
+Entities: Nepal - World Health Organization, 02, 2024, 07:00:00, GMT, World Health Organization, Nepal</a>&nbsp;&nbsp;<font color="#6f6f6f">World Health Organization
+Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
+Summary: Title: National conference on climate change and health held in Nepal - World Health Organization (WHO)
+Published on: Fri, 02 Aug 2024 07:00:00 GMT
+Source: World Health Organization (WHO)
+Description: <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOc0JJWmhPRWdPRzN6M0N2cllkTXYzUUc2dHBCSmVFWFBHZ21rZlQtSElNX3pKODZPczIyU2FCZGtHTkhQNWt1NTRQWGpyNVZrejNMaU45b1JIekpUYnZEMXVnS1AyN29rdUJFVVpob0xrQXMwcVNBVjFRemhkXy1BQkljaU9GYzE4RlEzTjRfOVBWQnJITTdmLVV6LUZXS3pnbkFTb2lUZXlMOFFHWUFhQw?oc=5" targ

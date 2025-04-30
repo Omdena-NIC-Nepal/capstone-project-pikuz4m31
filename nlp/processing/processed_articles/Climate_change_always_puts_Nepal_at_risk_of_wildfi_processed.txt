@@ -1,0 +1,7 @@
+Title: Climate_change_always_puts_Nepal_at_risk_of_wildfi.txt
+Entities: Nepal, 2025, 07:00:00, GMT, Nepal
+Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
+Summary: Title: Climate change always puts Nepal at risk of wildfires, despite some relief from rain - Insurance Khabar
+Published on: Wed, 16 Apr 2025 07:00:00 GMT
+Source: Insurance Khabar
+Description: <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxNajlDUkRTQlAyZllSQzZMREFkRWV2UThfSkFEeG9WRzhocmJtODhrOWhRNXg4c2loeUFaQlRCMDk5RkNuNUhjZF96QWJVMS1NUGU3OGNwVUxtRUR2VHM0NGRvb19qZ0Z5Um55WmltaFVGNUdFV0dSWTNtUDlrVzFhRkJIQnBjOWRzVGIyVDhvbERzc0FrZU9xdHdhdGt0UVpseUtRMUtFYnNqZEdGNFFjZ0hvQWhQTTkt?oc=5" ta

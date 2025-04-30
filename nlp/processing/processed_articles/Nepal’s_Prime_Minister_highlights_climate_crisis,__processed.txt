@@ -1,0 +1,12 @@
+Title: Nepal’s_Prime_Minister_highlights_climate_crisis,_.txt
+Entities: UNGA - UN News, 26, Sep 2024, 07:00:00, GMT, UN News
+Description, UNGA</a>&nbsp;&nbsp;<font, News</font>
+
+Full Content
+Sentiment: Sentiment(polarity=0.0875, subjectivity=0.1375)
+Summary: Title: Nepal’s Prime Minister highlights climate crisis, global inequality at UNGA - UN News
+Published on: Thu, 26 Sep 2024 07:00:00 GMT
+Source: UN News
+Description: <a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTFB6aUJYRjBXVHI0VFczVC1jVEhWZjl3WWczRzlRMmZwblNySVBQdmVxZUdXOTBUYldrTDAwQ1U0dFFybXBsOWRwVjMyUWdPWkVya1FrZzlEVQ?oc=5" target="_blank">Nepal’s Prime Minister highlights climate crisis, global inequality at UNGA</a>&nbsp;&nbsp;<font color="#6f6f6f">UN News</font>
+
+Full Content:

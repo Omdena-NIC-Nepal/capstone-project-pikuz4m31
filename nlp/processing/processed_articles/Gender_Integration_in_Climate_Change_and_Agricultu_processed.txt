@@ -1,0 +1,7 @@
+Title: Gender_Integration_in_Climate_Change_and_Agricultu.txt
+Entities: The Case of Nepal - Frontiers, 26, 2024, 11:56:28, Integration in Climate Change
+Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
+Summary: Title: Gender Integration in Climate Change and Agricultural Policies: The Case of Nepal - Frontiers
+Published on: Wed, 26 Jun 2024 11:56:28 GMT
+Source: Frontiers
+Description: <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPZlF4UTJ3MjB3bzRCU0hqTFBTX1lua0YtbGUzY0Nza3NSUUl2TDNNUU90VUUwaDJXTHJnd0lRalRuRlVOTjJuMnlCZUdhQUJJTGk3WG5GWXZrd3FzSGVSOTNDY0pCcFEwbFp6b1NVc2ZWNDZ3Qnc4cDJVUnJzdDFGNE5WN3RIQXJockQ4V2kwTVNqanpPMGV6STN2aER0MlNBX0E?oc=5" target="_blank">Gender Integration in Climate Ch
