@@ -130,10 +130,10 @@ df = df.sort_values('date')
 st.title("📊 Weather Data Visualization Dashboard")
 
 # Sidebar Filter
-districts = df['district'].dropna().unique().tolist()
-selected_district = st.sidebar.selectbox("Select District", ['All'] + districts)
-if selected_district != 'All':
-    df = df[df['district'] == selected_district]
+# districts = df['district'].dropna().unique().tolist()
+# selected_district = st.sidebar.selectbox("Select District", ['All'] + districts)
+# if selected_district != 'All':
+#     df = df[df['district'] == selected_district]
 
 # 1. Time-Series Plot
 st.subheader("📈 Temperature and Precipitation Over Time")
