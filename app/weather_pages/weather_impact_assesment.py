@@ -197,13 +197,13 @@ import os
 # Load and clean dataset
 # df = pd.read_csv('../feature_engineering/weather_and_temp_feature_engineering.csv')
 # Get current file's directory
-current_dir = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.abspath(os.path.join(BASE_DIR, '../feature_engineering/weather_and_temp_feature_engineering.csv'))
 
-# Construct absolute path to the CSV
-csv_path = os.path.join(current_dir, '..','feature_engineering', 'weather_and_temp_feature_engineering.csv')
-
+# Load data
+df = pd.read_csv(DATA_PATH)
 # Load dataset
-df = pd.read_csv(csv_path)
+df = pd.read_csv(DATA_PATH)
 df['date'] = pd.to_datetime(df['date'])
 df = df.sort_values(by='date')
 
