@@ -161,13 +161,13 @@ fig3 = px.scatter_mapbox(df, lat="latitude", lon="longitude", color="spi_like",
                          mapbox_style="open-street-map", zoom=4, title="SPI-like (Drought) Anomalies Map")
 st.plotly_chart(fig3)
 
-# 4. Animated Change Over Time
-st.subheader("🎞️ Animated Monthly Weather Changes")
-df['month_year'] = df['date'].dt.to_period('M').astype(str)
-monthly_avg = df.groupby(['month_year', 'district'])[['temperature_avg', 'precipitation']].mean().reset_index()
-fig4 = px.line(monthly_avg, x='month_year', y='temperature_avg', color='district',
-               title="Animated Monthly Average Temperature", animation_frame='month_year')
-st.plotly_chart(fig4)
+# # 4. Animated Change Over Time
+# st.subheader("🎞️ Animated Monthly Weather Changes")
+# df['month_year'] = df['date'].dt.to_period('M').astype(str)
+# monthly_avg = df.groupby(['month_year', 'district'])[['temperature_avg', 'precipitation']].mean().reset_index()
+# fig4 = px.line(monthly_avg, x='month_year', y='temperature_avg', color='district',
+#                title="Animated Monthly Average Temperature", animation_frame='month_year')
+# st.plotly_chart(fig4)
 
 # 5. Bar Graph of Disaster Frequency
 st.subheader("📊 Disaster Frequencies by Type")
