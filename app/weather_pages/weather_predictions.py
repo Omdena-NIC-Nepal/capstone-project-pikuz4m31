@@ -749,8 +749,8 @@ st.title("🌎 Climate Prediction and Assessment App")
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Define paths for data and models
-data_dir = os.path.join(current_dir, '..', 'data', 'feature_engineering')
-csv_path = os.path.join(data_dir, 'engineered_weather_data.csv')
+data_dir = os.path.join(current_dir, '..', 'feature_engineering')
+csv_path = os.path.join(data_dir, 'weather_and_temp_feature_engineering.csv')
 model_dir = 'models/weather_climate_model/'
 
 # Optional check to ensure the data file exists
