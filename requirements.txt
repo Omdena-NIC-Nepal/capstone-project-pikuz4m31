@@ -82,6 +82,8 @@ seaborn
 # Geospatial
 geopandas
 shapely
+geopy
+
 
 # Visualization
 streamlit
