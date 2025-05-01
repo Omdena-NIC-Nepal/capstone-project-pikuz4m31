@@ -133,7 +133,7 @@ if st.session_state.page == "Home":
     - Climate Predictions
     - Glacier Lake Mapping and Impact
     - Socio-Economic Impact Assessment (Coming Soon!)
-    - NLP Sections (Language Prediction, NER Prediction, Sentiment Analysis, Summary Details, Topic Details)
+    - NLP Sections (Language Prediction, NER Prediction, Sentiment Analysis, Summary Details)
     """)
     st.markdown("---")
     st.warning("⚠️ Important: If the page is not redirected properly, try refreshing the browser.")
