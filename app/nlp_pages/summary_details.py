@@ -51,24 +51,6 @@ def load_summary_outputs():
     return summary_data
 
 # -------------------- Display Summary & Stats --------------------
-# def render_summary_text(original_text, summary_text):
-#     col1, col2 = st.columns(2)
-#     with col1:
-#         st.markdown("#### 📄 Original Text")
-#         st.text_area("Original", original_text, height=200)
-#     with col2:
-#         st.markdown("#### 📝 Summarized Text")
-#         st.text_area("Summary", summary_text, height=200)
-
-#     # Stats table
-#     stats = {
-#         "Metric": ["Word Count", "Character Count"],
-#         "Original": [len(original_text.split()), len(original_text)],
-#         "Summary": [len(summary_text.split()), len(summary_text)],
-#     }
-#     st.markdown("#### 📊 Summary Statistics")
-#     st.table(stats)
-
 
 import pandas as pd
 
@@ -121,27 +103,27 @@ def render_summary_text(original_text, summary_text):
 # -------------------- Streamlit App --------------------
 def main():
     setup_nltk()
-    st.title("🧠 Text Summarization App")
+    st.title(" Text Summarization App")
     st.subheader("Choose Your Mode")
 
-    app_mode = st.radio("Select an option:", ["Live Input", "Preloaded Files"])
+    app_mode = st.radio("Select an option:", ["Live Input ✍️", "Preloaded Files 📂"])
 
-    if app_mode == "Live Input":
+    if app_mode == "Live Input ✍️":
         st.markdown("#### Enter text to get a summary in real-time.")
         user_text = st.text_area("Input text:", height=200)
 
-        if user_text:
-            if st.button("Summarize"):
+        if st.button("Summarize 📝"):
+            if user_text.strip():
                 summary_text = summarize_text_with_summa(user_text)
                 render_summary_text(user_text, summary_text)
             else:
-                st.warning("Please enter text to summarize.")
-
-    else:
+                st.warning("⚠️ Please enter text to summarize.")
+    
+    elif app_mode == "Preloaded Files 📂":
         st.markdown("#### Select a preprocessed file to view the summary.")
         summary_outputs = load_summary_outputs()
         if not summary_outputs:
-            st.warning("No preloaded summaries found.")
+            st.warning("⚠️ No preloaded summaries found.")
             return
 
         display_names = {
@@ -157,7 +139,7 @@ def main():
             summary_text = summarize_text_with_summa(original_text)
             render_summary_text(original_text, summary_text)
         else:
-            st.info("Please select a file to view its summary.")
+            st.info("ℹ️ Please select a file to view its summary.")
 
 # -------------------- Run App --------------------
 if __name__ == "__main__":
