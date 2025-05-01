@@ -217,24 +217,17 @@ import os
 
 # Set up NLTK data path and download required data
 def setup_nltk():
+    import nltk
     try:
-        # Set NLTK data path to a directory where we have write permissions
-        nltk_data_dir = os.path.join(os.getcwd(), 'nltk_data')
-        os.makedirs(nltk_data_dir, exist_ok=True)
-        nltk.data.path.append(nltk_data_dir)
-        
-        # Download required NLTK data
-        try:
-            nltk.data.find('tokenizers/punkt')
-        except LookupError:
-            nltk.download('punkt', download_dir=nltk_data_dir)
-            nltk.download('punkt_tab', download_dir=nltk_data_dir)
-    except Exception as e:
-        logging.error(f"Error setting up NLTK: {e}")
-        raise
+        nltk.data.find('tokenizers/punkt')
+    except LookupError:
+        nltk.download('punkt')
+    
+    try:
+        nltk.data.find('corpora/stopwords')
+    except LookupError:
+        nltk.download('stopwords')
 
-# Initialize NLTK
-setup_nltk()
 
 # Set up logging for better error tracking
 logging.basicConfig(level=logging.INFO)
