@@ -860,7 +860,7 @@ if st.button("🚀 Train and Predict"):
 
     model_path = os.path.join(model_dir, f'{model_choice.lower().replace(" ", "_")}_model.pkl')
     joblib.dump(model, model_path)
-    st.success(f"✅ Model saved at: {model_path}")
+    # st.success(f"✅ Model saved at: {model_path}")
 
 # --- Future Prediction Section ---
 # --- Future Prediction Section ---
