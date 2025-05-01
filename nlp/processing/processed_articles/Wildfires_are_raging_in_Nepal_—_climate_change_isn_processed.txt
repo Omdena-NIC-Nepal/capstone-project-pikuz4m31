@@ -1,9 +1,0 @@
-Title: Wildfires_are_raging_in_Nepal_—_climate_change_isn.txt
-Entities: Wildfires, Nepal, 14, 2024, 07:00:00, GMT, Nepal
-Sentiment: Sentiment(polarity=0.0875, subjectivity=0.6375)
-Summary: Title: Wildfires are raging in Nepal — climate change isn’t the only culprit - Nature
-Published on: Fri, 14 Jun 2024 07:00:00 GMT
-Source: Nature
-Description: <a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTFBxMkFod1Byb0FxaGpKNVhQQmk3SWxsWTE0MWo3NnEwYTJWNWUydk15RmlXSUxOZHFfOGxRMEUycHEzVS1OQmtSMGpFUUViTWtlMHJVSWdMVXdLR0xWQ1lj?oc=5" target="_blank">Wildfires are raging in Nepal — climate change isn’t the only culprit</a>&nbsp;&nbsp;<font color="#6f6f6f">Nature</font>
-
-Full Content:

@@ -1,8 +1,0 @@
-Title: Minister_Paudel_urges_global_support_in_addressing.txt
-Entities: Paudel, The Rising Nepal
-, 28, Sep 2024, 07:00:00, GMT
-Sentiment: Sentiment(polarity=0.0875, subjectivity=0.1375)
-Summary: Title: Minister Paudel urges global support in addressing climate change challenges - The Rising Nepal
-Published on: Sat, 28 Sep 2024 07:00:00 GMT
-Source: The Rising Nepal
-Description: <a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE5sano1ZXd4NERxNzg4UndxZWFrVG9FbDBJbGt5TmxJOGJ5LTBiNG9ISlBqZnAzOEJubHhRTDZCNWZBdnNERDc0RXdsYlFPOHk2?oc=5" target="_blank">Minister Paudel urges global support in addressing climate change challenges</a>&nbsp;&nbsp;<font color="#6f6f6f">The Rising Nepal</fo

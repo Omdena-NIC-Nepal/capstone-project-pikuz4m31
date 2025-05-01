@@ -1,8 +1,0 @@
-Title: Nepal_calls_for_a_unified_mountain_voice_for_urgen.txt
-Entities: Nepal, - Food and Agriculture Organization, 28 May 2024, 07:00:00, GMT, Food and Agriculture Organization
-Description
-Sentiment: Sentiment(polarity=0.15, subjectivity=0.21666666666666667)
-Summary: Title: Nepal calls for a unified mountain voice for urgent climate action - Food and Agriculture Organization
-Published on: Tue, 28 May 2024 07:00:00 GMT
-Source: Food and Agriculture Organization
-Description: <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxNOW0xekpvRmMyM1NUNkZRZFJhRDV0TTg3aFFyV2ZoSVJ3SEVPZk5OQW5KcUVKUDVRYzZqR0xlQThBbU1JZGtnc2VXVzRYNUd4R2dQY04wRk9idFMtZzZ3TEJ4WjNqbXRvOTkzVUJ5eTU1UDdKX3ZXMkZEZEpyck85a3FwM1BPcjVLUmxWckNtNkFRbTVOeHU0bWY0ZF8tblhKMnNNNXhhMVZzTERBeklhbGFPL

@@ -1,7 +1,0 @@
-Title: Nepal_renews_call_for_climate_justice_at_the_Hague.txt
-Entities: Hague, 09, 08:00:00, GMT, Hague
-Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
-Summary: Title: Nepal renews call for climate justice at the Hague, says country suffering disproportionately - myRepublica
-Published on: Mon, 09 Dec 2024 08:00:00 GMT
-Source: myRepublica
-Description: <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWlROMTBJeGkySlNjbUtZMXM2UnhiaU1mTHhqTGVnWFRPb1F1TWVpdXJSUGNubEVheV81RGxEN0Q4SVJQQlRxLVlxNTFUcEhGVmZOd1phSEI0QjhCMkxmRGRYY2MtbE1BQnRCSUJ0RVZSV3FlVURJN0xlaThZbGt0NmVNeC1KeTNmVUI1SF9vSjBUT2poWnptWnhOVUh2aGpYVWlnR296VExZRTNySkNTZG40T0FLdUUzcXVJYllvOT

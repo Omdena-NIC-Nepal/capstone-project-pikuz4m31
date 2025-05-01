@@ -1,8 +1,0 @@
-Title: 'Recent_flooding_is_consequence_of_climate_change'.txt
-Entities: 2024, 07:00:00, GMT, The Himalayan Times
-Description
-Sentiment: Sentiment(polarity=0.0875, subjectivity=0.2625)
-Summary: Title: 'Recent flooding is consequence of climate change' - The Himalayan Times
-Published on: Tue, 01 Oct 2024 07:00:00 GMT
-Source: The Himalayan Times
-Description: <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxNcjBQeGlLbXlqM3ROdUNaQ2FDel94UGZfNXRocTZ1NUNwT0hTSzJ5bVJQbkMwRVRhNXY3SV81SGMxZm8yMXY3V0pqUDAwTFV3aDJyeHB4Qk83OHBIXzBNQVNEMHhqOXYyODBnZVlGcWZmbXM3eUhiQ2I5OE1PazhXYmxYczRrSkhmcTFGT9IBXEFVX3lxTE5nMlFzRWVyQzItbzBGUXluREpwNUhZLWZmT3c4eFJGeXpNQTJTOVVJNk1NcnpTLVlFYkZINU9HaDB5OTlLT

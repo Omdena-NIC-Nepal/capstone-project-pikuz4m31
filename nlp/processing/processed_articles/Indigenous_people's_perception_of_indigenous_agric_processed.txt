@@ -1,7 +1,0 @@
-Title: Indigenous_people's_perception_of_indigenous_agric.txt
-Entities: Khumbu, Nepal - Frontiers, 27, 2024, 05:09:00, CBMijgFBVV95cUxQcHdTSkJ3V3BiZG10eTRhTTBHdDZtTkRScHBkYXJ1TnhENnlKOGxHejRRV0U5UHN1YzhxS0c2czg2eVNQTUtkMGpsd0IxWlR1dzZUR3lOQVo4VG5WdUhROVhRRDFoaG9rRHRQWXNQaFBDYVFnYU1BYUxONGIxVmJWbXh2VDZLUkZVN2toZWFR?oc=5, Khumbu
-Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
-Summary: Title: Indigenous people's perception of indigenous agricultural knowledge for climate change adaptation in Khumbu, Nepal - Frontiers
-Published on: Thu, 27 Jun 2024 05:09:00 GMT
-Source: Frontiers
-Description: <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxQcHdTSkJ3V3BiZG10eTRhTTBHdDZtTkRScHBkYXJ1TnhENnlKOGxHejRRV0U5UHN1YzhxS0c2czg2eVNQTUtkMGpsd0IxWlR1dzZUR3lOQVo4VG5WdUhROVhRRDFoaG9rRHRQWXNQaFBDYVFnYU1BYUxONGIxVmJWbXh2VDZLUkZVN2toZWFR?oc=5" target="_blank">Indigenous people's percep

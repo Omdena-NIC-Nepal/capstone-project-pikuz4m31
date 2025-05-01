@@ -1,7 +1,0 @@
-Title: Nepal_should_see_climate_change_as_an_opportunity_.txt
-Entities: Nepal, 09 Feb 2025, 08:00:00, GMT
-Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
-Summary: Title: Nepal should see climate change as an opportunity - The Kathmandu Post
-Published on: Sun, 09 Feb 2025 08:00:00 GMT
-Source: The Kathmandu Post
-Description: <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPU2NlZmRNYUhxZ1pfcXQzc3NVXzhUM3YyUmxKS0VJZWpqWVJIY0FQcW9nd3VhV2VIeDl4empBSWY5TXBLbGptOGxndFRiSmw2eW1XaFpkcThUTVg3RHlkX3RsNE04STZTUXZ2ZV9QTHVlcGFmLS1aMi1ZSXo5Y090VkEyNU8wWE9ndFlUN3Qtd1F2TmoxSlhETmxDcWxzTy1sQ3c?oc=5" target="_blank">Nepal should see climate change as an opportun

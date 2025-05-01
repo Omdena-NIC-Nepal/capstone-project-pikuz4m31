@@ -1,7 +1,0 @@
-Title: Activists_blame_policy_failures_over_climate_chang.txt
-Entities: Nepal Terai’s, Mongabay, 27, 2024, 07:00:00, GMT, Nepal Terai’s
-Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
-Summary: Title: Activists blame policy failures over climate change for Nepal Terai’s water crisis - Mongabay
-Published on: Thu, 27 Jun 2024 07:00:00 GMT
-Source: Mongabay
-Description: <a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxPd2pqLVNpV05reXhfMFFMeUprZFVxSVhMaFFwc1o3dE9zOW54UmZ1U295V0dpVDVxekpLaTBRWGVwVzR0emhadzZkRmNROFliUTZzdVVBbGRQMllmdS1wb3hIaVk3RGJ2cEEyczJEaGhmd0ZUd1hyWFpXRm9IMlBpd24tMmZrVHB1WTZJbk12bnRqVDE4Vi05eGo1TnplQWVSRTVwWFEtLWRCY2xlOEdRN2dhN201WE0?oc=5" target="_blank">Activ

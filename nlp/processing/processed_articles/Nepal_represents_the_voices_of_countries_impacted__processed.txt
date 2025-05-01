@@ -1,7 +1,0 @@
-Title: Nepal_represents_the_voices_of_countries_impacted_.txt
-Entities: Shahi -, 06, 2025, 08:00:00, GMT
-Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
-Summary: Title: Nepal represents the voices of countries impacted from climate change, Minister Shahi - The Rising Nepal
-Published on: Thu, 06 Mar 2025 08:00:00 GMT
-Source: The Rising Nepal
-Description: <a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFB2OXB3X2s4QmtqZkEybl9meWFJOE1xZ2JvT1V5aE5UM3NBU1ZVSkxDRndHRnctcHhtN010YzJ3TW1ib0pyY2d1ZVZ5bUdMRnd6?oc=5" target="_blank">Nepal represents the voices of countries impacted from climate change, Minister Shahi</a>&nbsp;&nbsp;<font color="#6f6f6f">Th

@@ -1,7 +1,0 @@
-Title: Migration,_Environment_and_Climate_Change_Nexus_in.txt
-Entities: Nepal, 30, 2025, 00:25:17, GMT, Nepal
-Sentiment: Sentiment(polarity=0.0875, subjectivity=0.3041666666666667)
-Summary: Title: Migration, Environment and Climate Change Nexus in Nepal: Policy Brief [EN/NE] - ReliefWeb
-Published on: Wed, 30 Apr 2025 00:25:17 GMT
-Source: ReliefWeb
-Description: <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxNM1F0U2FpcFFWZDM4eU1KVUxORlZrQk5ZVmxzcXZ1ZUF2RndYUFdTcFR4bUotX0R3SXNEM2NWc0VqM3ZDX19aZ0NmdnVZdFEwclp3dnBFSThNMWI5NWZzZU5pQ2NaNzlqR3JQdHVwSWdvUlVBbnE5Rzd1RmJRamEtMXZPVldYQVNJYlJyOGZLUTktV09IRkwwYmI1b0ltUGt6bHd5bmVfRk0?oc=5" target="_blank">Migration, Environment and 

@@ -1,8 +1,0 @@
-Title: Women_master_climate_resilient_farming_for_bigger_.txt
-Entities: Nepal - Food and Agriculture Organization, 15, 2024, 07:00:00, GMT, Food and Agriculture Organization
-Description
-Sentiment: Sentiment(polarity=0.225, subjectivity=0.425)
-Summary: Title: Women master climate resilient farming for bigger and better yields in Nepal - Food and Agriculture Organization
-Published on: Mon, 15 Jul 2024 07:00:00 GMT
-Source: Food and Agriculture Organization
-Description: <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNUS16dl8tbGNFZjFrektJT3FjYlRJNFRkQno5QzgxaU0ydDV1MUJUdXpieXZDUndtSHh5TGMyTHdVcWF1b19JSURzSEtVcVFNUGZVc3dmdHE4WDhsVEpld0xvWTdNV0xwOFdtNVNtZmpSX2t4Y0Rhc0ZjeFdhZGZpaDFuTDJYRVNOMTJlcnVJWF9yMUwwWldMdmwtOURCWjNVTEVVSkNzTXVndVN

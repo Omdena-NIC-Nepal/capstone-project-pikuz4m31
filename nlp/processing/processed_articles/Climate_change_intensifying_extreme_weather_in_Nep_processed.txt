@@ -1,7 +1,0 @@
-Title: Climate_change_intensifying_extreme_weather_in_Nep.txt
-Entities: Nepal, 30, Sep 2024, 07:00:00, GMT, Nepal
-Sentiment: Sentiment(polarity=-0.03518518518518519, subjectivity=0.5212962962962964)
-Summary: Title: Climate change intensifying extreme weather in Nepal, warns ICIMOD - Down To Earth
-Published on: Mon, 30 Sep 2024 07:00:00 GMT
-Source: Down To Earth
-Description: <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNWXJveDNYSEc4TmVSZ05nTFBYN0FZU0RWQzNzZ1VYcjhSN3duZGlwX1Q5QnRnOEVJMkpfWEVFa0x6a2VHQUR1cENVQVNIdGxONGkxWE4wNE5jYjFDbXZ0Y2hMQWJDNC1mcjR2N1czaG5uMmhRNE9LdGpUcUc2ckIySENsenVhZ1JwWHQ5WG80ZkV6VzdQYXVsbVQxcnlVT1lPUmthc0RmWmp2U2RwUzFTdtIBvgFBVV95cUxPN2tReXlEaHZ0cXBxSWJILThJcjZ6T

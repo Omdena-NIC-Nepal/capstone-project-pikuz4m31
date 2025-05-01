@@ -1,7 +1,0 @@
-Title: UNICEF_facilitates_high-level_policy_dialogue_on_c.txt
-Entities: 24 Jan 2025, 08:00:00, GMT
-Sentiment: Sentiment(polarity=0.1375, subjectivity=0.1875)
-Summary: Title: UNICEF facilitates high-level policy dialogue on climate action and risk reduction through education - Unicef
-Published on: Fri, 24 Jan 2025 08:00:00 GMT
-Source: Unicef
-Description: <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMTZNXzdyUVE1YTlSNnZoUXEyR0NrOXJhcHp5M1dkZG9JYXdFQk9YWVFrczBPWHliQ2dQX1ZfNGhXSHloNWF6SThGWENfTDZvZmdFUmtQYXFZQzQtNk4tZlo5cEo4S21TR2I5c3p3bW9MQ0VWRjVGNU1IUlpXckdZcWpoUUJTMzU0aWtiZ3lMZ0ZnOUZPQVZyT29FdE9nSl9vaXB1bWo3YVVkM3laVnBnWlo0eDNtQU9FS0w5SXUwX294Z

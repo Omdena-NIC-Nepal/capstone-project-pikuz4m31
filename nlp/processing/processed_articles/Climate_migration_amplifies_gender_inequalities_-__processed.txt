@@ -1,7 +1,0 @@
-Title: Climate_migration_amplifies_gender_inequalities_-_.txt
-Entities: 2024, 07:00:00, GMT
-Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
-Summary: Title: Climate migration amplifies gender inequalities - Nepal - ReliefWeb
-Published on: Mon, 19 Aug 2024 07:00:00 GMT
-Source: ReliefWeb
-Description: <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxNcnNIVnVXSjRtYmNBbHNLVVVPRHB0YW1ab3B6dE12M1NXSEdhWlVDR09CcEVpMkxmYTFTWE1lRFhLYi1qWEh4NExtaE9aUVlYMGM0OTY0aFZLcDRWcGhKcW9oRHN1R3dGR0NleDRtdEM4UnA2RDlfZVVDU0hESVU0cV9XLU5tWGFuQlE?oc=5" target="_blank">Climate migration amplifies gender inequalities - Nepal</a>&nbsp;&nbsp;<font color="#6f6f6

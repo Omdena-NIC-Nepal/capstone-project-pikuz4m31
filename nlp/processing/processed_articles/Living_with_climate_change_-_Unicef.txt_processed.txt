@@ -1,9 +1,0 @@
-Title: Living_with_climate_change_-_Unicef.txt
-Entities: 26, Dec 2024, 08:00:00, GMT
-Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
-Summary: Title: Living with climate change - Unicef
-Published on: Thu, 26 Dec 2024 08:00:00 GMT
-Source: Unicef
-Description: <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBydDE2dzktS0JXbXR6MHJzckdNbkRfS3lpeXJPMmVzMUV0X3loc2pWS1hpVmN1MkYtRTJ4RDhMandHNHRTMURlRTFYei1DdHVWS0QtUWNSWGpCUjY3bmllcjRBZGRfZ3U5eFE?oc=5" target="_blank">Living with climate change</a>&nbsp;&nbsp;<font color="#6f6f6f">Unicef</font>
-
-Full Content:

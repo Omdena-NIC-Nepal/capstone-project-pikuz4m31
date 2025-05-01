@@ -1,7 +1,0 @@
-Title: Nepal_prepares_for_mountain_dialogue_on_Climate_Ch.txt
-Entities: Climate Change - Daily Excelsior, 17, 2025, 07:00:00, GMT, CBMijwFBVV95cUxObFYzWURuRjJ2UDlCUGY0LXRPTndjN2VaV3ZXUTI3Ny1OZFlUVmdFUmVpNmtxNHpncy1tSG9pcV9PTklESkVZXy1Nd1lkLWlNeHhKN0txb2NaUjB1SVhuUXpWYVk2M09ZSEpRdHJ4RXp2SXBuX3JTazNyM2ZaT2hrNVFkczFhdlExSXVBZ05ibw?oc=5, Climate
-Sentiment: Sentiment(polarity=0.0875, subjectivity=0.1375)
-Summary: Title: Nepal prepares for mountain dialogue on Climate Change - Daily Excelsior
-Published on: Mon, 17 Mar 2025 07:00:00 GMT
-Source: Daily Excelsior
-Description: <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxObFYzWURuRjJ2UDlCUGY0LXRPTndjN2VaV3ZXUTI3Ny1OZFlUVmdFUmVpNmtxNHpncy1tSG9pcV9PTklESkVZXy1Nd1lkLWlNeHhKN0txb2NaUjB1SVhuUXpWYVk2M09ZSEpRdHJ4RXp2SXBuX3JTazNyM2ZaT2hrNVFkczFhdlExSXVBZ05ibw?oc=5" target="_blank">Nepal prepares for mountain dialogue on Climate Change</a>&nbsp;&nbsp;<f

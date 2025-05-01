@@ -1,9 +1,0 @@
-Title: Nepal_says_China_withholds_“essential”_info_on_bur.txt
-Entities: Nepal, China, Himalayan, 22, 2024, 07:00:00, GMT, China, Himalayan, color="#6f6f6f">Climate Home News</font>
-
-Full Content
-Sentiment: Sentiment(polarity=0.0875, subjectivity=0.2875)
-Summary: Title: Nepal says China withholds “essential” info on bursting Himalayan glacial lakes - Climate Home News
-Published on: Thu, 22 Aug 2024 07:00:00 GMT
-Source: Climate Home News
-Description: <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUzVFSGZuQlVqS3JmUDlXMlFvVGg4XzdEX1JyNVNJM3pKWl9zOHpPWFBoZDNKcnRfUUhjUFB3T1N3b0huT28ycEdwY05zUWV2TFlPM2otbnIxdGVMTXVHWXZFOWthNHlnWEVMZy10SnBkQS1TZXk2TFFVcmoyMXFtbmxfUlZJTlZIY0NvWm5NNmxGM1NiVF92eVJLQTJJY3YyWEZmWHNvSVBlc0J5SE1Fd0RRN0tJR1o4aml0NS1DVGw?

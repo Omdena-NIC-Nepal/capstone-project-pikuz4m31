@@ -1,9 +1,0 @@
-Title: Climate_change_hitting_mountains_hardest,_says_PM_.txt
-Entities: 22 Jan 2025, 08:00:00, GMT, CBMiUEFVX3lxTFBGa2E0NWM1YktZX1NGM01aUFo3QkVOVV9YcmdiRmVCdkRtX0N1N0lHbnEyLXI3Rzd6c1Z1aFNYWEtFUVl5TUh1MldHSGhPSXlp?oc=5
-Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
-Summary: Title: Climate change hitting mountains hardest, says PM Oli - The Rising Nepal
-Published on: Wed, 22 Jan 2025 08:00:00 GMT
-Source: The Rising Nepal
-Description: <a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTFBGa2E0NWM1YktZX1NGM01aUFo3QkVOVV9YcmdiRmVCdkRtX0N1N0lHbnEyLXI3Rzd6c1Z1aFNYWEtFUVl5TUh1MldHSGhPSXlp?oc=5" target="_blank">Climate change hitting mountains hardest, says PM Oli</a>&nbsp;&nbsp;<font color="#6f6f6f">The Rising Nepal</font>
-
-Full Content:

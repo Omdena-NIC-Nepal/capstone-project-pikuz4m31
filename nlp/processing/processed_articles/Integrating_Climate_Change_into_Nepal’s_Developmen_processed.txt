@@ -1,7 +1,0 @@
-Title: Integrating_Climate_Change_into_Nepal’s_Developmen.txt
-Entities: Nepal’s Development Strategy Key to Build Resilience, New World Bank Group Report - World Bank, 15, 07:00:00, GMT, CBMihwJBVV95cUxNamFhSjFNQ3ZrZkZfdFdUdDNxUnRfYk1sX25sZXNMcjFzRzNDSVFhQzQxbFBWZkJ0QUpCa3FLdDNESFU4ODJGMzFQdXlDRm4wb3F4RnBxNUJlclN4cEFaRXNGbzRuSzVpTzdTRHU5a0x5SEVJNXlabFpNRDN1UFFjSWFDX0lDckIzOU5jQU9Cc3BpWWpMME5rbExZQmRkT2dDdW1wQ2xpSDBIaUV0XzY4bnUyTy1TdTdBQVR2Y3JmSnhlZmU3R09QVnRDbXlqRk1DOG5ndlRCNllKN3lwS2RZdi1zMnNMdUh2OWxLeEpvNk9WWnVzaWJjZ3lJYWRqclJlQlYzdVNqUQ?oc=5, Climate Change, Nepal’s Development Strategy Key to Build Resilience, New World Bank Group
-Sentiment: Sentiment(polarity=0.10378787878787878, subjectivity=0.5765151515151515)
-Summary: Title: Integrating Climate Change into Nepal’s Development Strategy Key to Build Resilience, Says New World Bank Group Report - World Bank
-Published on: Thu, 15 Sep 2022 07:00:00 GMT
-Source: World Bank
-Description: <a href="https://news.google.com/rss/articles/CBMihwJBVV95cUxNamFhSjFNQ3ZrZkZfdFdUdDNxUnRfYk1sX25sZXNMcjFzRzNDSVFhQzQxbFBWZkJ0QUpCa3FLdDNESFU4ODJGMzFQdXlDRm4wb3F4RnBxNUJlclN4cEFaRXNGbzRuSzVpTzdTRHU5a0x5SEVJNXlabFpNRDN1UFFjSWFDX0lDckIzOU5jQU9Cc3BpWWpMME5rbExZQmRkT2dDdW1wQ2xpSDBIaUV0XzY

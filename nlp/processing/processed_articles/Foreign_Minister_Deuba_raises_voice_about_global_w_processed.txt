@@ -1,8 +1,0 @@
-Title: Foreign_Minister_Deuba_raises_voice_about_global_w.txt
-Entities: Deuba, Nepal - The Rising Nepal
-Published, 09, 16:33:17, GMT, CBMiUEFVX3lxTE90a1JoR0s4dVpxUmExNXZxWTJSYWVfQ05Eb3F3WDFfRTdSX0pYSWxadDdvUTRUR2tSQTNSVHlJMm9aNF9JMkxsTktJYWxfOUhZ?oc=5, Deuba
-Sentiment: Sentiment(polarity=0.045, subjectivity=0.135)
-Summary: Title: Foreign Minister Deuba raises voice about global warming effects facing Nepal - The Rising Nepal
-Published on: Mon, 09 Dec 2024 16:33:17 GMT
-Source: The Rising Nepal
-Description: <a href="https://news.google.com/rss/articles/CBMiUEFVX3lxTE90a1JoR0s4dVpxUmExNXZxWTJSYWVfQ05Eb3F3WDFfRTdSX0pYSWxadDdvUTRUR2tSQTNSVHlJMm9aNF9JMkxsTktJYWxfOUhZ?oc=5" target="_blank">Foreign Minister Deuba raises voice about global warming effects facing Nepal</a>&nbsp;&nbsp;<font color="#6f6f6f">The Rising Nepal</

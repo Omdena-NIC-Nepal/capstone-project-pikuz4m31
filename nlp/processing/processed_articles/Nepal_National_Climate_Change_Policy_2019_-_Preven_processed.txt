@@ -1,7 +1,0 @@
-Title: Nepal_National_Climate_Change_Policy_2019_-_Preven.txt
-Entities: Nepal National Climate Change, 2019, 27 Jan 2025, 08:00:00, GMT, National Climate Change Policy
-Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
-Summary: Title: Nepal National Climate Change Policy 2019 - PreventionWeb.net
-Published on: Mon, 27 Jan 2025 08:00:00 GMT
-Source: PreventionWeb.net
-Description: <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSy1RcnJjbG5rcjRsOWFZV2w3cmJ6SlBmY0l2eDBNa1Y0NTFhbVVCS0xPMW5BX1U0Y292NE1PeTdvSG5QanhDZmYtQXpCUHlVUmhXOFQzVTFiSjFWSDlHbXUtM2tvME5BM0QyXzg4Y1hNQmp5TDAtMko4MUFwWjluMjdfWFRzNlozX2VF?oc=5" target="_blank">Nepal National Climate Change Policy 2019</a>&nbsp;&nbsp;<font color="#6f6f6f">Preventi

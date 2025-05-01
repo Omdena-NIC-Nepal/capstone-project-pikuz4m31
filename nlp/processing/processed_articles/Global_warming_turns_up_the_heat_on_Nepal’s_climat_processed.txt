@@ -1,7 +1,0 @@
-Title: Global_warming_turns_up_the_heat_on_Nepal’s_climat.txt
-Entities: Nepal, 07, 2024, 07:00:00, GMT, Nepal
-Sentiment: Sentiment(polarity=0.11666666666666665, subjectivity=0.18333333333333335)
-Summary: Title: Global warming turns up the heat on Nepal’s climate diplomacy - Himal Southasian
-Published on: Fri, 07 Jun 2024 07:00:00 GMT
-Source: Himal Southasian
-Description: <a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPUzJoc3JhdnlnVTQ1ci1yVDZGOUJxZ3RwOWd0aXRIdmp1NUFKQ1FlVU1PTzZVQXh1c2JIbDZuNXhfTGJ1T1p1THFYMmhpamtxdnlaR2g5NFBtcUt5TTh2OHRqd1dxbXlIbDlTUkFYczVpeFdHd3d0aVhsTk1vTnV6LVJ3a2k3a0JaT0RXdmJtbENZYXl0RjktZF9mVnJIdVZNajNJSVlGN3F0RnBaSWxMZWEzRF9kOGVYS29PSVh3?oc=5" target="_blank">G

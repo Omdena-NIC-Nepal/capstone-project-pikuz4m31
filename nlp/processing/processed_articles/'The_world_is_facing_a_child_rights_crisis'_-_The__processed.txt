@@ -1,8 +1,0 @@
-Title: 'The_world_is_facing_a_child_rights_crisis'_-_The_.txt
-Entities: The Himalayan Times, 27, 2025, GMT, The Himalayan Times
-Description
-Sentiment: Sentiment(polarity=0.175, subjectivity=0.275)
-Summary: Title: 'The world is facing a child rights crisis' - The Himalayan Times
-Published on: Sun, 27 Apr 2025 09:11:15 GMT
-Source: The Himalayan Times
-Description: <a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxOVWs1cU1LTy1KZ0cxSmhzQ2xDQTZFeE9VUkxkTXVFZ2hSSkprYWV4Z2paTWp4LXVuc2xNMWUwUVVjWXFIbDYxQmdxNXlLYlFUZGdTenJvNUxCNC11NTVnX1laTnc3RlZWY0IwZWhiWmJMU2JPRVBFbzZyaDZJUDNxOVF4QdIBXEFVX3lxTE9DdTFmR1RfV2lEQTNGWjRkQjRMWk53UGhYVTZJRkhXTDlGWjFEc25WNDEyTm5GbTZTMm02U0JEUEJoX3VQQmo5amxTdFhPWmUxc0tJ

@@ -123,6 +123,7 @@ sumy
 vaderSentiment
 textstat
 en-core-web-sm
+selenium
 
 
 # AWS SDK

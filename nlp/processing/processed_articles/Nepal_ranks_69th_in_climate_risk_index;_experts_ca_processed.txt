@@ -1,7 +1,0 @@
-Title: Nepal_ranks_69th_in_climate_risk_index;_experts_ca.txt
-Entities: Nepal, 69th, 14 Feb 2025, 08:00:00, GMT, 69th
-Sentiment: Sentiment(polarity=0.019999999999999997, subjectivity=0.31)
-Summary: Title: Nepal ranks 69th in climate risk index; experts call the findings unbelievable - Onlinekhabar English
-Published on: Fri, 14 Feb 2025 08:00:00 GMT
-Source: Onlinekhabar English
-Description: <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxObGFXcDZaVlNScGpyRFpwMzFlZlNxeWJySU10bDM2TWFQUktaLXBmbDNpN0Q2UkttWjVqMzRHakZYdlJfUmJjLXc0cHRxZ0hsWEN6dEVjN1U5ZnFIU0JoeFpHaTFzcHpnNXNNWUtnTHM1YkxYRWZkSkNUNW5XOUdVUEhyZHBYQl9uSTh1OGFrRmh1MEZwdVFkUkRidmRBdUgyel9MMnFRbExTN2dRLVN6QnZmelpoQQ?oc=5" ta

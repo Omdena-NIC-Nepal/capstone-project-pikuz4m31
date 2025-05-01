@@ -1,7 +1,0 @@
-Title: Climate_Change_Amplified_the_Effects_of_Extreme_Ra.txt
-Entities: Nepal, 18, 08:00:00, GMT, Change Amplified
-Sentiment: Sentiment(polarity=0.024999999999999994, subjectivity=0.6375)
-Summary: Title: Climate Change Amplified the Effects of Extreme Rainfall in Nepal - eos.org
-Published on: Wed, 18 Dec 2024 08:00:00 GMT
-Source: eos.org
-Description: <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPNGJBeDlPME5pdzRSRk1vVHA4Z3FVOF9HQ0JvenBDQ3BtMFFVdkJGSHRiUGcxWTdGZXdqMGxkejEwbmlNOXRUNGZ4TlJRdTlKekdhd2w0OTV4enZUbFgxZDNOQUd4c2laajlON3hzTkl6cndYdDU5SjNRMnI0d1F0ODFTRFRRYmwteElGYlNNUXRjTDJE?oc=5" target="_blank">Climate Change Amplified the Effects of Extreme Rainfall in Nepal</a>&n
