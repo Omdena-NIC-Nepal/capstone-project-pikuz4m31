@@ -605,9 +605,22 @@
 #     else:
 #         st.info(f"Page `{st.session_state.page}` is a dummy page (content coming soon).")
 
-
+import spacy
+from spacy.cli import download
 import streamlit as st
 import os
+
+
+# Download the model if it's not available
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
+
+# Now, your app can safely use the nlp object
+
+
 
 # Initialize session state
 if "main_section" not in st.session_state:
