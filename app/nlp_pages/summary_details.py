@@ -51,6 +51,27 @@ def load_summary_outputs():
     return summary_data
 
 # -------------------- Display Summary & Stats --------------------
+# def render_summary_text(original_text, summary_text):
+#     col1, col2 = st.columns(2)
+#     with col1:
+#         st.markdown("#### 📄 Original Text")
+#         st.text_area("Original", original_text, height=200)
+#     with col2:
+#         st.markdown("#### 📝 Summarized Text")
+#         st.text_area("Summary", summary_text, height=200)
+
+#     # Stats table
+#     stats = {
+#         "Metric": ["Word Count", "Character Count"],
+#         "Original": [len(original_text.split()), len(original_text)],
+#         "Summary": [len(summary_text.split()), len(summary_text)],
+#     }
+#     st.markdown("#### 📊 Summary Statistics")
+#     st.table(stats)
+
+
+import pandas as pd
+
 def render_summary_text(original_text, summary_text):
     col1, col2 = st.columns(2)
     with col1:
@@ -60,14 +81,42 @@ def render_summary_text(original_text, summary_text):
         st.markdown("#### 📝 Summarized Text")
         st.text_area("Summary", summary_text, height=200)
 
-    # Stats table
-    stats = {
-        "Metric": ["Word Count", "Character Count"],
-        "Original": [len(original_text.split()), len(original_text)],
-        "Summary": [len(summary_text.split()), len(summary_text)],
-    }
+    # Stats table data
+    metrics = ["Word Count", "Character Count"]
+    original_stats = [len(original_text.split()), len(original_text)]
+    summary_stats = [len(summary_text.split()), len(summary_text)]
+
+    df = pd.DataFrame({
+        "Metric": metrics,
+        "Original": original_stats,
+        "Summary": summary_stats
+    })
+    df.insert(0, "SN", range(1, len(df) + 1))
+
+    # Center the content using HTML and CSS
+    styled_table = df.to_html(index=False, classes='centered-table')
+
     st.markdown("#### 📊 Summary Statistics")
-    st.table(stats)
+    st.markdown(
+        """
+        <style>
+        .centered-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .centered-table th, .centered-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .centered-table th {
+            background-color: #f2f2f2;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+    st.markdown(styled_table, unsafe_allow_html=True)
 
 # -------------------- Streamlit App --------------------
 def main():
