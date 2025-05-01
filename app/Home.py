@@ -46,7 +46,6 @@ nlp_sections = [
     "NER Prediction",
     "Sentiment Analysis",
     "Summary Details",
-    "Topic Details"
 ]
 
 # File Mapping
@@ -66,7 +65,6 @@ PAGES = {
     "Language Prediction": "nlp_pages/language_prediction.py",
     "NER Prediction": "nlp_pages/ner_prediction.py",
     "Summary Details": "nlp_pages/summary_details.py",
-    "Topic Details": "nlp_pages/topic_details.py",
 }
 
 # Home button
