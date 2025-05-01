@@ -44,4 +44,4 @@ textstat
 
 # Removed: en-core-web-sm, bertopic[all], lxml[html_clean], transformers, selenium, AWS SDK
 # For Summarization Feature
-sumy
+summa
