@@ -122,6 +122,8 @@ langdetect
 sumy
 vaderSentiment
 textstat
+en-core-web-sm
+
 
 # AWS SDK
 botocore
