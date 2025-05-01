@@ -747,7 +747,7 @@ import spacy
 import logging
 import os
 import pandas as pd
-
+import spacy.cli
 # Set up logging
 logging.basicConfig(level=logging.INFO)
 
@@ -756,10 +756,11 @@ logging.basicConfig(level=logging.INFO)
 def load_spacy_model():
     try:
         nlp = spacy.load("en_core_web_sm")
-        logging.info("spaCy model loaded successfully.")
-    except OSError as e:
-        logging.error(f"Error loading spaCy model: {e}")
-        raise e
+    except OSError:
+        logging.error("spaCy model 'en_core_web_sm' not found. Installing it now...")
+        spacy.cli.download("en_core_web_sm")  # This will download the model
+        nlp = spacy.load("en_core_web_sm")  # Reload the model after downloading
+        logging.info("spaCy model 'en_core_web_sm' downloaded and loaded successfully.")
     return nlp
 
 # Initialize the spaCy model globally
