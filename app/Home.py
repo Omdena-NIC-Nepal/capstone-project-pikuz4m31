@@ -136,7 +136,11 @@ if st.session_state.page == "Home":
     - Glacier Lake Mapping and Impact
     - Socio-Economic Impact Assessment (Coming Soon!)
     - NLP Sections (Language Prediction, NER Prediction, Sentiment Analysis, Summary Details, Topic Details)
+
+    ---
+    ⚠️ **Important**: If the page is not redirected properly, try refreshing the browser.
     """)
+
 else:
     page_path = PAGES.get(st.session_state.page, None)
     if page_path:
