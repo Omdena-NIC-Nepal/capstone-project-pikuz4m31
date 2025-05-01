@@ -15,35 +15,63 @@ def setup_nltk():
 logging.basicConfig(level=logging.INFO)
 
 # -------------------- Summarization Function --------------------
-def summarize_text_with_summa(text):
+def summarize_text_with_summa(text, ratio=0.3):
     try:
         if not text.strip():
             return "No input text provided."
         
-        summary = summarize(text, ratio=0.3)  # Keep 30% of the original text
+        summary = summarize(text, ratio=ratio)
         return summary if summary else "Text too short or unstructured to summarize effectively."
     except Exception as e:
         logging.error(f"Error during summarization: {e}")
         return f"An error occurred during summarization: {e}"
 
-# -------------------- Demo Preloaded Data --------------------
+# -------------------- Load Preloaded Summaries from Files --------------------
+@st.cache_data
 def load_summary_outputs():
-    return {
-        "summary_file_1.txt": "This is a sample preloaded summary 1.",
-        "summary_file_2.txt": "This is a sample preloaded summary 2."
-    }
+    summary_data = {}
 
-# -------------------- Display Summary --------------------
-def render_summary_text(summary_text):
-    if not summary_text:
-        st.info("No summary found.")
-        return
-    st.text_area("Generated Summary:", summary_text, height=200)
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    root_dir = os.path.dirname(current_dir)
+    summary_dir = os.path.join(root_dir, 'nlp', 'models', 'trained_model', 'summarization_model')
+
+    if not os.path.exists(summary_dir):
+        logging.warning(f"Summarization folder '{summary_dir}' not found.")
+        return summary_data
+
+    for filename in os.listdir(summary_dir):
+        if filename.endswith('.txt'):
+            file_path = os.path.join(summary_dir, filename)
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    summary_data[filename] = content
+            except Exception as e:
+                logging.error(f"Error reading {filename}: {e}")
+    return summary_data
+
+# -------------------- Display Summary & Stats --------------------
+def render_summary_text(original_text, summary_text):
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown("#### 📄 Original Text")
+        st.text_area("Original", original_text, height=200)
+    with col2:
+        st.markdown("#### 📝 Summarized Text")
+        st.text_area("Summary", summary_text, height=200)
+
+    # Stats table
+    stats = {
+        "Metric": ["Word Count", "Character Count"],
+        "Original": [len(original_text.split()), len(original_text)],
+        "Summary": [len(summary_text.split()), len(summary_text)],
+    }
+    st.markdown("#### 📊 Summary Statistics")
+    st.table(stats)
 
 # -------------------- Streamlit App --------------------
 def main():
     setup_nltk()
-
     st.title("🧠 Text Summarization App")
     st.subheader("Choose Your Mode")
 
@@ -56,8 +84,7 @@ def main():
         if user_text:
             if st.button("Summarize"):
                 summary_text = summarize_text_with_summa(user_text)
-                st.subheader("📝 Summary:")
-                render_summary_text(summary_text)
+                render_summary_text(user_text, summary_text)
             else:
                 st.warning("Please enter text to summarize.")
 
@@ -68,22 +95,18 @@ def main():
             st.warning("No preloaded summaries found.")
             return
 
-        files_with_spaces = {
+        display_names = {
             file: file.replace('_', ' ').replace('.txt', '').replace('summary', '').strip()
-            for file in summary_outputs.keys()
+            for file in summary_outputs
         }
-
-        files_with_spaces = {"SELECT HERE": "SELECT HERE"} | files_with_spaces
-        selected_file_display_name = st.selectbox("Select a preprocessed summary file:", list(files_with_spaces.values()))
-        selected_file = next(key for key, value in files_with_spaces.items() if value == selected_file_display_name)
+        display_names = {"SELECT HERE": "SELECT HERE"} | display_names
+        selected_display = st.selectbox("Select a file:", list(display_names.values()))
+        selected_file = next(k for k, v in display_names.items() if v == selected_display)
 
         if selected_file != "SELECT HERE":
-            summary_text = summary_outputs[selected_file]
-            if isinstance(summary_text, str):
-                st.subheader(f"📝 Summary in: {selected_file}")
-                render_summary_text(summary_text)
-            else:
-                st.error("Invalid summary structure in the selected file.")
+            original_text = summary_outputs[selected_file]
+            summary_text = summarize_text_with_summa(original_text)
+            render_summary_text(original_text, summary_text)
         else:
             st.info("Please select a file to view its summary.")
 
