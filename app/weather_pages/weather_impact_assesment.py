@@ -23,11 +23,13 @@ df = df.sort_values(by='date')
 st.title("🌦️ Weather Impact Assessment Dashboard")
 
 # # Sidebar Filters
-# st.sidebar.header("Filter Options")
-# districts = df['district'].dropna().unique().tolist()
+# # st.sidebar.header("Filter Options")
+districts = df['district'].dropna().unique().tolist()
 # selected_district = st.sidebar.selectbox("Select a District", ['All'] + districts)
-# if selected_district != 'All':
-#     df = df[df['district'] == selected_district]
+selected_district = st.selectbox("Select a District", ['All'] + districts)
+
+if selected_district != 'All':
+    df = df[df['district'] == selected_district]
 
 # 1. Precipitation Trends (Rolling Averages)
 st.subheader("📉 Precipitation Rolling Patterns")
