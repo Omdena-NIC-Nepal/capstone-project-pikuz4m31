@@ -15,25 +15,6 @@ SUPPORTED_ENTITY_LABELS = [
 
 # Load preprocessed NER outputs from pickle files
 @st.cache_data
-# def load_ner_outputs(base_path='../nlp/models/trained_model/ner'):
-#     ner_models = {}
-#     if not os.path.exists(base_path):
-#         logging.warning(f"NER output folder '{base_path}' not found.")
-#         return ner_models
-
-#     for filename in os.listdir(base_path):
-#         if filename.endswith('.pkl'):
-#             file_path = os.path.join(base_path, filename)
-#             try:
-#                 with open(file_path, 'rb') as f:
-#                     ner_data = pickle.load(f)
-#                     logging.info(f"Loaded NER data from {filename}")
-#                     ner_models[filename] = ner_data
-#             except Exception as e:
-#                 logging.error(f"Error loading {filename}: {e}")
-#     return ner_models
-
-
 def load_ner_outputs():
     ner_models = {}
 
