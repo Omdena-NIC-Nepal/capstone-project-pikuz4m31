@@ -15,12 +15,43 @@ SUPPORTED_ENTITY_LABELS = [
 
 # Load preprocessed NER outputs from pickle files
 @st.cache_data
-def load_ner_outputs(base_path='../nlp/models/trained_model/ner'):
+# def load_ner_outputs(base_path='../nlp/models/trained_model/ner'):
+#     ner_models = {}
+#     if not os.path.exists(base_path):
+#         logging.warning(f"NER output folder '{base_path}' not found.")
+#         return ner_models
+
+#     for filename in os.listdir(base_path):
+#         if filename.endswith('.pkl'):
+#             file_path = os.path.join(base_path, filename)
+#             try:
+#                 with open(file_path, 'rb') as f:
+#                     ner_data = pickle.load(f)
+#                     logging.info(f"Loaded NER data from {filename}")
+#                     ner_models[filename] = ner_data
+#             except Exception as e:
+#                 logging.error(f"Error loading {filename}: {e}")
+#     return ner_models
+
+
+def load_ner_outputs():
     ner_models = {}
+
+    # Get absolute path to the current file (e.g., app/)
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Go up one level to the root of the project
+    root_dir = os.path.dirname(current_dir)
+
+    # Build the full path to the NER folder
+    base_path = os.path.join(root_dir, 'nlp', 'models', 'trained_model', 'ner')
+
+    # Check if the directory exists
     if not os.path.exists(base_path):
         logging.warning(f"NER output folder '{base_path}' not found.")
         return ner_models
 
+    # Load all .pkl files from the directory
     for filename in os.listdir(base_path):
         if filename.endswith('.pkl'):
             file_path = os.path.join(base_path, filename)
@@ -32,6 +63,7 @@ def load_ner_outputs(base_path='../nlp/models/trained_model/ner'):
             except Exception as e:
                 logging.error(f"Error loading {filename}: {e}")
     return ner_models
+
 
 # Perform NER using spaCy
 def perform_ner_on_input(text):
@@ -155,9 +187,3 @@ def main():
 if __name__ == "__main__" or st._is_running_with_streamlit:
     main()
 
-
-
-# import streamlit as st
-
-# st.title("Hello Streamlit!")
-# st.write("This is a basic test to check if Streamlit is running.")
