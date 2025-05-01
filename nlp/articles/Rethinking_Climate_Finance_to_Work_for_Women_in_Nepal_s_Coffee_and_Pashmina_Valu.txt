@@ -4,4 +4,4 @@ Source: ESCAP
 
 www.unescap.org
 
-Verifying you are human. This may take a few seconds.
+Verify you are human by completing the action below.
