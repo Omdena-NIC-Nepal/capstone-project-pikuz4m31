@@ -213,66 +213,55 @@ from sumy.summarizers.lsa import LsaSummarizer
 from sumy.utils import get_stop_words
 import logging
 import nltk
-import os
 
-# Set up NLTK data path and download required data
+# -------------------- Setup NLTK --------------------
 def setup_nltk():
-    import nltk
     try:
         nltk.data.find('tokenizers/punkt')
     except LookupError:
         nltk.download('punkt')
-    
+
     try:
         nltk.data.find('corpora/stopwords')
     except LookupError:
         nltk.download('stopwords')
 
-
-# Set up logging for better error tracking
+# -------------------- Logging --------------------
 logging.basicConfig(level=logging.INFO)
 
-# Summarize text using sumy
+# -------------------- Summarization Function --------------------
 def summarize_text_with_sumy(text):
     try:
         if not text.strip():
             return "No input text provided."
 
-        # Create a parser from the input text
         parser = PlaintextParser.from_string(text, Tokenizer("english"))
-        
-        # Using LSA Summarizer
         summarizer = LsaSummarizer()
-        summarizer.stop_words = get_stop_words("english")  # Set stop words
-        
-        # Generate summary (3 sentences by default)
+        summarizer.stop_words = get_stop_words("english")
         summary_sentences = summarizer(parser.document, 3)
-        
-        # Join sentences from the summary and return the summarized text
         return ' '.join([str(sentence) for sentence in summary_sentences])
     except Exception as e:
         logging.error(f"Error during summarization: {e}")
         return f"An error occurred during summarization: {e}"
 
-# Summarization for preloaded summaries
+# -------------------- Demo Preloaded Data --------------------
 def load_summary_outputs():
-    # Load preprocessed summaries (for demo, it would simulate preloaded summaries)
     return {
         "summary_file_1.txt": "This is a sample preloaded summary 1.",
         "summary_file_2.txt": "This is a sample preloaded summary 2."
     }
 
-# Render summaries in styled HTML table
+# -------------------- Display Summary --------------------
 def render_summary_text(summary_text):
     if not summary_text:
         st.info("No summary found.")
         return
-
-    # Display the summary in a box
     st.text_area("Generated Summary:", summary_text, height=200)
 
-# Main function to handle Streamlit interactions
+# -------------------- Streamlit App --------------------
 def main():
+    setup_nltk()  # ✅ Fixes the error by ensuring punkt is downloaded
+
     st.title("🧠 Text Summarization App")
     st.subheader("Choose Your Mode")
 
@@ -297,15 +286,12 @@ def main():
             st.warning("No preloaded summaries found.")
             return
 
-        # Prepare file list for selection
         files_with_spaces = {
             file: file.replace('_', ' ').replace('.txt', '').replace('summary', '').strip()
             for file in summary_outputs.keys()
         }
 
         files_with_spaces = {"SELECT HERE": "SELECT HERE"} | files_with_spaces
-
-        # File selection widget
         selected_file_display_name = st.selectbox("Select a preprocessed summary file:", list(files_with_spaces.values()))
         selected_file = next(key for key, value in files_with_spaces.items() if value == selected_file_display_name)
 
@@ -319,5 +305,6 @@ def main():
         else:
             st.info("Please select a file to view its summary.")
 
+# -------------------- Run App --------------------
 if __name__ == "__main__":
     main()
