@@ -1,16 +1,21 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
 
 # Paths to your saved models (update if needed)
-MODEL_PATH_RF = 'models/socio_eco_data_model/random_forest_classifier.pkl'
-MODEL_PATH_SVM = 'models/socio_eco_data_model/svm_classifier.pkl'
-MODEL_PATH_GB_CLASS = 'models/socio_eco_data_model/gradient_boosting_classifier.pkl'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_DIR = os.path.join(BASE_DIR, 'models', 'socio_eco_data_model')
 
-MODEL_PATH_LR = 'models/socio_eco_data_model/linear_regression.pkl'
-MODEL_PATH_RIDGE = 'models/socio_eco_data_model/ridge_regression.pkl'
-MODEL_PATH_LASSO = 'models/socio_eco_data_model/lasso_regression.pkl'
-MODEL_PATH_GB_REG = 'models/socio_eco_data_model/gradient_boosting_regressor.pkl'
+# Model paths
+MODEL_PATH_RF = os.path.join(MODEL_DIR, 'random_forest_classifier.pkl')
+MODEL_PATH_SVM = os.path.join(MODEL_DIR, 'svm_classifier.pkl')
+MODEL_PATH_GB_CLASS = os.path.join(MODEL_DIR, 'gradient_boosting_classifier.pkl')
+
+MODEL_PATH_LR = os.path.join(MODEL_DIR, 'linear_regression.pkl')
+MODEL_PATH_RIDGE = os.path.join(MODEL_DIR, 'ridge_regression.pkl')
+MODEL_PATH_LASSO = os.path.join(MODEL_DIR, 'lasso_regression.pkl')
+MODEL_PATH_GB_REG = os.path.join(MODEL_DIR, 'gradient_boosting_regressor.pkl')
 
 @st.cache_resource
 def load_model(path):
