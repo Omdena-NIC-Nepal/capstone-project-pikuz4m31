@@ -35,7 +35,7 @@ subpages_mapping = {
         "Glacier Lake Future Predictions"
     ],
     "Socio-Economic Impact": [
-        "Socio-Economic Impact - Overview",
+        "Socio-Economic Impact - Predictions",
         "Socio-Economic Impact - Trends"
     ]
 }
@@ -59,7 +59,7 @@ PAGES = {
     "Weather Data Visualization": "weather_pages/weather_data_visualization.py",
     "Weather Impact Assessment": "weather_pages/weather_impact_assesment.py",
     "Weather Predictions": "weather_pages/weather_predictions.py",
-    "Socio-Economic Impact - Overview": "",  # Dummy
+    "Socio-Economic Impact - Predictions": "socio_eco_pages/extrem_events.py",  # Dummy
     "Socio-Economic Impact - Trends": "",  # Dummy
     "Sentiment Analysis": "nlp_pages/sentiment_analysis.py",
     "Language Prediction": "nlp_pages/language_prediction.py",

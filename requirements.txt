@@ -9,6 +9,8 @@ seaborn
 geopandas
 shapely
 geopy
+fuzzywuzzy
+python-Levenshtein
 
 # Visualization
 streamlit
