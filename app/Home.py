@@ -95,7 +95,7 @@ if selected_main != "Select...":
         st.session_state.page = selected_subpage
 
 # Show the District Dropdown above the NLP section if the user selects "Weather Data Visualization"
-if st.session_state.page == "Weather Data Visualization || Weather Impact Assesment":
+if st.session_state.page in ["Weather Data Visualization", "Weather Impact Assessment"]:
     import pandas as pd
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     DATA_PATH = os.path.abspath(os.path.join(BASE_DIR, '../feature_engineering/weather_and_temp_feature_engineering.csv'))
