@@ -16,7 +16,7 @@ def load_sentiment_outputs():
 
     current_dir = os.path.dirname(os.path.abspath(__file__))
     root_dir = os.path.dirname(current_dir)
-    base_path = os.path.join(root_dir, 'nlp', 'models', 'trained_model', 'sentiment_analysis')
+    base_path = os.path.join(root_dir, '..', 'nlp', 'models', 'trained_model', 'sentiment_analysis')
 
     if not os.path.exists(base_path):
         logging.warning(f"Sentiment model folder '{base_path}' not found.")
@@ -174,5 +174,5 @@ def main():
         display_preloaded_sentiment()
 
 # Run
-if __name__ == "__main__" or st._is_running_with_streamlit:
+if __name__ == "__main__" :
     main()

@@ -1,4 +1,3 @@
-
 import pickle
 import streamlit as st
 import spacy
@@ -6,33 +5,31 @@ import logging
 import os
 import pandas as pd
 
-
-
 # Supported entity types
 SUPPORTED_ENTITY_LABELS = [
     "PERSON", "ORG", "GPE", "LOC", "NORP", "MONEY", "DATE", "TIME", "PERCENT", "FAC"
 ]
+
+# Load SpaCy model globally
+try:
+    nlp = spacy.load("en_core_web_sm")
+except Exception as e:
+    st.error(f"Failed to load SpaCy model: {e}")
+    nlp = None  # fallback to None, handle later
 
 # Load preprocessed NER outputs from pickle files
 @st.cache_data
 def load_ner_outputs():
     ner_models = {}
 
-    # Get absolute path to the current file (e.g., app/)
     current_dir = os.path.dirname(os.path.abspath(__file__))
-
-    # Go up one level to the root of the project
     root_dir = os.path.dirname(current_dir)
+    base_path = os.path.join(root_dir, '..', 'nlp', 'models', 'trained_model', 'ner')
 
-    # Build the full path to the NER folder
-    base_path = os.path.join(root_dir, 'nlp', 'models', 'trained_model', 'ner')
-
-    # Check if the directory exists
     if not os.path.exists(base_path):
         logging.warning(f"NER output folder '{base_path}' not found.")
         return ner_models
 
-    # Load all .pkl files from the directory
     for filename in os.listdir(base_path):
         if filename.endswith('.pkl'):
             file_path = os.path.join(base_path, filename)
@@ -48,12 +45,17 @@ def load_ner_outputs():
 
 # Perform NER using spaCy
 def perform_ner_on_input(text):
+    if nlp is None:
+        st.error("SpaCy model is not loaded. Cannot perform NER.")
+        return {}
+
     doc = nlp(text)
     entities = {label: [] for label in SUPPORTED_ENTITY_LABELS}
     for ent in doc.ents:
         if ent.label_ in entities:
             entities[ent.label_].append(ent.text)
-    return {k: v for k, v in entities.items() if v}  # Remove empty entries
+    # Remove empty entries
+    return {k: v for k, v in entities.items() if v}
 
 # Create styled HTML table from entity dict
 def render_entity_table(entities: dict):
@@ -101,6 +103,7 @@ def render_entity_table(entities: dict):
     st.markdown(table_css, unsafe_allow_html=True)
     st.markdown(styled_table, unsafe_allow_html=True)
 
+
 # Streamlit UI for processing user input
 def display_ner_for_user_input():
     st.title("Named Entity Recognition (NER) - Live Input")
@@ -139,7 +142,6 @@ def display_ner_from_saved_models():
     # Find the original filename from the selected display name
     selected_file = next(key for key, value in files_with_spaces.items() if value == selected_file_display_name)
 
-    # If the user selects a file (not the placeholder)
     if selected_file != "SELECT HERE":
         entities = ner_outputs[selected_file]
         if isinstance(entities, dict):
@@ -148,8 +150,8 @@ def display_ner_from_saved_models():
         else:
             st.error("Invalid structure in the selected file.")
     else:
-        # If the placeholder is selected, do nothing or display a message
         st.info("Please select a file to view extracted NER entities.")
+
 
 # Enhanced UI with sections
 def main():
@@ -165,6 +167,6 @@ def main():
         st.markdown("#### Select a preprocessed file to view extracted NER entities.")
         display_ner_from_saved_models()
 
-if __name__ == "__main__" or st._is_running_with_streamlit:
-    main()
 
+if __name__ == "__main__":
+    main()

@@ -15,7 +15,7 @@ def load_language_models():
 
     current_dir = os.path.dirname(os.path.abspath(__file__))
     root_dir = os.path.dirname(current_dir)
-    base_path = os.path.join(root_dir, 'nlp', 'models', 'trained_model', 'language_model')
+    base_path = os.path.join(root_dir, '..', 'nlp', 'models', 'trained_model', 'language_model')
 
     if not os.path.exists(base_path):
         logging.warning(f"Language model folder '{base_path}' not found.")
@@ -150,6 +150,8 @@ def main():
     else:
         display_preloaded_language_prediction()
 
-# Run
-if __name__ == "__main__" or st._is_running_with_streamlit:
+
+
+if __name__ == "__main__":
     main()
+

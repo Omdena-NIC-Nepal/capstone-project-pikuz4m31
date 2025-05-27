@@ -33,7 +33,7 @@ def load_summary_outputs():
 
     current_dir = os.path.dirname(os.path.abspath(__file__))
     root_dir = os.path.dirname(current_dir)
-    summary_dir = os.path.join(root_dir, 'nlp', 'models', 'trained_model', 'summarization_model')
+    summary_dir = os.path.join(root_dir, '..', 'nlp', 'models', 'trained_model', 'summarization_model')
 
     if not os.path.exists(summary_dir):
         logging.warning(f"Summarization folder '{summary_dir}' not found.")

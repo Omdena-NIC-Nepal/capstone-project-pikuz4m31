@@ -125,11 +125,24 @@ if selected_nlp != "Select...":
     st.session_state.page = selected_nlp
 
 # Helper function to dynamically load a module from file
+# def show_page(file_path):
+#     try:
+#         spec = importlib.util.spec_from_file_location("module.name", file_path)
+#         module = importlib.util.module_from_spec(spec)
+#         spec.loader.exec_module(module)
+#     except Exception as e:
+#         st.error(f"❌ Failed to load page: `{st.session_state.page}`\n\n**Error:** {str(e)}")
+
 def show_page(file_path):
     try:
         spec = importlib.util.spec_from_file_location("module.name", file_path)
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
+        # Explicitly call main()
+        if hasattr(module, "main"):
+            module.main()
+        else:
+            st.error("Module has no 'main' function.")
     except Exception as e:
         st.error(f"❌ Failed to load page: `{st.session_state.page}`\n\n**Error:** {str(e)}")
 
