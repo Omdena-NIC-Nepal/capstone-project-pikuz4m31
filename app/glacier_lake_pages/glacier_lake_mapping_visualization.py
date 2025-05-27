@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 # Load GeoJSON data
-DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "processed" / "combined_data.geojson"
+DATA_PATH = Path(__file__).resolve().parents[2] / "data" / "processed" / "combined_data.geojson"
 
 st.title("Glacier Lake Mapping And Visualization")
 st.write("This dashboard visualizes the  glacial lakes and associated hazards.")

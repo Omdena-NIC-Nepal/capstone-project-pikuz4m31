@@ -5,7 +5,9 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 # Setup the correct data path
-DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "processed" / "dailyclimate_cleaned.csv"
+# DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "processed" / "dailyclimate_cleaned.csv"
+BASE_DIR = Path(__file__).resolve().parents[2]
+DATA_PATH = BASE_DIR / "data" / "processed" / "dailyclimate_cleaned.csv"
 
 # Load cleaned data
 if not DATA_PATH.exists():

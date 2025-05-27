@@ -5,7 +5,7 @@ import os
 
 # Paths to your saved models (update if needed)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_DIR = os.path.join(BASE_DIR, 'models', 'socio_eco_data_model')
+MODEL_DIR = os.path.join(BASE_DIR, '..', 'models', 'socio_eco_data_model')
 
 # Model paths
 MODEL_PATH_RF = os.path.join(MODEL_DIR, 'random_forest_classifier.pkl')

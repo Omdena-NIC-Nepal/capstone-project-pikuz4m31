@@ -1,7 +1,7 @@
-
 import streamlit as st
 import os
-
+import importlib.util
+import pandas as pd
 
 # Initialize session state
 if "main_section" not in st.session_state:
@@ -36,7 +36,6 @@ subpages_mapping = {
     ],
     "Socio-Economic Impact": [
         "Socio-Economic Impact - Predictions",
-        "Socio-Economic Impact - Trends"
     ]
 }
 
@@ -59,21 +58,21 @@ PAGES = {
     "Weather Data Visualization": "weather_pages/weather_data_visualization.py",
     "Weather Impact Assessment": "weather_pages/weather_impact_assesment.py",
     "Weather Predictions": "weather_pages/weather_predictions.py",
-    "Socio-Economic Impact - Predictions": "socio_eco_pages/extrem_events.py",  # Dummy
-    "Socio-Economic Impact - Trends": "",  # Dummy
+    "Socio-Economic Impact - Predictions": "socio_eco_pages/extrem_events.py",
     "Sentiment Analysis": "nlp_pages/sentiment_analysis.py",
     "Language Prediction": "nlp_pages/language_prediction.py",
     "NER Prediction": "nlp_pages/ner_prediction.py",
     "Summary Details": "nlp_pages/summary_details.py",
+    "coming_soon": "coming_soon.py"
 }
 
-# Home button
+# Home Button
 if st.sidebar.button("🏠 Home"):
     st.session_state.main_section = "Select..."
     st.session_state.sub_page = "Select..."
     st.session_state.page = "Home"
 
-# Select Main Section
+# Main Section Selector
 selected_main = st.sidebar.selectbox(
     "Select Section",
     ["Select..."] + main_sections,
@@ -81,7 +80,7 @@ selected_main = st.sidebar.selectbox(
     key="main_section"
 )
 
-# Select Subpage if a Main Section is selected
+# Subpage Selector
 if selected_main != "Select...":
     available_subpages = subpages_mapping[selected_main]
     selected_subpage = st.sidebar.selectbox(
@@ -90,26 +89,31 @@ if selected_main != "Select...":
         index=0,
         key="sub_page"
     )
-    
+
     if selected_subpage in PAGES:
         st.session_state.page = selected_subpage
 
-# Show the District Dropdown above the NLP section if the user selects "Weather Data Visualization"
+# Show district dropdown for specific pages
 if st.session_state.page in ["Weather Data Visualization", "Weather Impact Assessment"]:
-    import pandas as pd
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    try:
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    except NameError:
+        BASE_DIR = os.getcwd()
+
     DATA_PATH = os.path.abspath(os.path.join(BASE_DIR, '../feature_engineering/weather_and_temp_feature_engineering.csv'))
-    df = pd.read_csv(DATA_PATH)
-    districts = df['district'].dropna().unique().tolist()
-    selected_district = st.sidebar.selectbox("Select District", ['All'] + districts)
+    if os.path.exists(DATA_PATH):
+        df = pd.read_csv(DATA_PATH)
+        districts = df['district'].dropna().unique().tolist()
+        selected_district = st.sidebar.selectbox("Select District", ['All'] + districts)
 
-    if selected_district != 'All':
-        df = df[df['district'] == selected_district]
+        if selected_district != 'All':
+            df = df[df['district'] == selected_district]
+    else:
+        st.sidebar.error("District data file not found.")
 
-# --- NLP Section Separated at Bottom ---
+# NLP Section
 st.sidebar.markdown("---")
 st.sidebar.markdown("### NLP Tools")
-
 selected_nlp = st.sidebar.selectbox(
     "Select NLP Section",
     ["Select..."] + nlp_sections,
@@ -120,12 +124,21 @@ selected_nlp = st.sidebar.selectbox(
 if selected_nlp != "Select...":
     st.session_state.page = selected_nlp
 
-# Page Display Logic
+# Helper function to dynamically load a module from file
+def show_page(file_path):
+    try:
+        spec = importlib.util.spec_from_file_location("module.name", file_path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+    except Exception as e:
+        st.error(f"❌ Failed to load page: `{st.session_state.page}`\n\n**Error:** {str(e)}")
+
+# Page Rendering
 if st.session_state.page == "Home":
-    st.write("""  
+    st.write("""
     ### 🌍 Climate Prediction and Assessment App  
     Welcome to the app!  
-    Navigate through the sections using the sidebar.  
+    Navigate through the sections using the sidebar.
 
     **Key Features:**
     - Vulnerability Analysis
@@ -138,22 +151,14 @@ if st.session_state.page == "Home":
     st.markdown("---")
     st.warning("⚠️ Important: If the page is not redirected properly, try refreshing the browser.")
 else:
-    page_path = PAGES.get(st.session_state.page, None)
-    if page_path:
-        try:
-            base_dir = os.path.dirname(__file__)
-            abs_path = os.path.join(base_dir, page_path)
+    page_path = PAGES.get(st.session_state.page, "coming_soon")
+    try:
+        base_dir = os.path.dirname(__file__)
+    except NameError:
+        base_dir = os.getcwd()
+    abs_path = os.path.join(base_dir, page_path)
 
-            if os.path.exists(abs_path):
-                with open(abs_path, "r", encoding="utf-8", errors="ignore") as f:
-                    code = f.read()
-                    exec(code, globals())
-            else:
-                st.error(f"Error: File not found at {abs_path}")
-        except Exception as e:
-            st.error(f"Error loading page `{st.session_state.page}`: {str(e)}")
+    if os.path.exists(abs_path):
+        show_page(abs_path)
     else:
-        st.info(f"Page `{st.session_state.page}` is a dummy page (content coming soon).")
-
-
-
+        st.error(f"🔍 Page file not found at: `{abs_path}`")

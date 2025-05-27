@@ -9,7 +9,7 @@ import folium
 from streamlit_folium import st_folium
 
 # Load GeoJSON data
-DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "processed" / "combined_data.geojson"
+DATA_PATH = Path(__file__).resolve().parents[2] / "data" / "processed" / "combined_data.geojson"
 
 st.title("Glacier Lake Impact Assessment")
 st.write("This dashboard visualizes the potential impact of glacial lakes and associated hazards.")

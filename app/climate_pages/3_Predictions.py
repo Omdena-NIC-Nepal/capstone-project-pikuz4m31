@@ -6,15 +6,18 @@ import pandas as pd
 import numpy as np
 import os
 import sys
-
+from pathlib import Path
 from sklearn.preprocessing import StandardScaler
 
 # Add the src directory to sys.path
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src'))
 
 # --- Import functions ---
-from model_training import train_and_save_model, predict, calculate_metrics, load_model
+# from model_training import train_and_save_model, predict, calculate_metrics, load_model
+SRC_DIR = Path(__file__).resolve().parents[2] / "src"
+sys.path.append(str(SRC_DIR))
 
+from model_training import train_and_save_model, predict, calculate_metrics, load_model
 # --- Helper Functions ---
 
 @st.cache_data
@@ -61,7 +64,7 @@ st.title("🌎 Climate Prediction and Assessment App")
 
 # --- Load Data Dynamically ---
 current_dir = os.path.dirname(os.path.abspath(__file__))
-csv_path = os.path.join(current_dir, '..', 'data', 'processed', 'dailyclimate_cleaned.csv')
+csv_path = os.path.join(current_dir, '..', '..', 'data', 'processed', 'dailyclimate_cleaned.csv')
 
 if not os.path.exists(csv_path):
     st.error(f"❗ Data file not found at expected location: `{csv_path}`")

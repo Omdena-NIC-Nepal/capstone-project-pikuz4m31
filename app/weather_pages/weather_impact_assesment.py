@@ -11,7 +11,7 @@ import os
 # df = pd.read_csv('../feature_engineering/weather_and_temp_feature_engineering.csv')
 # Get current file's directory
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.abspath(os.path.join(BASE_DIR, '../feature_engineering/weather_and_temp_feature_engineering.csv'))
+DATA_PATH = os.path.abspath(os.path.join(BASE_DIR, '../../feature_engineering/weather_and_temp_feature_engineering.csv'))
 
 # Load data
 df = pd.read_csv(DATA_PATH)

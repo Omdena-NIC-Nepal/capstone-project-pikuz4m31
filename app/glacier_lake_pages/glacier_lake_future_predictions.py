@@ -13,9 +13,11 @@ import matplotlib.pyplot as plt
 # --- Setup Paths ---
 current_dir = os.path.dirname(os.path.abspath(__file__))  # app/
 root_dir = os.path.dirname(current_dir)
-src_dir = os.path.join(root_dir, 'src')
-models_dir = os.path.join(current_dir, 'models', 'glacier_data_model')
-data_file = os.path.join(root_dir, 'data', 'processed', 'combined_data.geojson')
+src_dir = os.path.join(root_dir, '..','src')
+models_dir = os.path.abspath(os.path.join(root_dir, 'models', 'glacier_data_model'))
+data_file = os.path.join(root_dir, '..', 'data', 'processed', 'combined_data.geojson')
+
+
 
 if src_dir not in sys.path:
     sys.path.append(src_dir)
@@ -49,12 +51,12 @@ def load_data(source):
         return None
 
 def load_model(model_name):
-    """Load a model from disk."""
     path = os.path.join(models_dir, f"{model_name}.joblib")
     if os.path.exists(path):
         return joblib.load(path)
     st.error(f"❌ Model `{model_name}` not found at {path}.")
     return None
+
 
 @st.cache_resource
 def load_all_models():
